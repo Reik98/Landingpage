@@ -158,58 +158,43 @@ st.markdown("""
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
+<div class="feature-box">
+  <div class="centered-image">
+    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
+    <h4 class="centered-heading">Paradigmenanalyse</h4>
+  </div>
+  <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
+  <ul>
+    <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
+    <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
+    <li>Systemisches Lernen nach Senge & Automatisierung</li>
+  </ul>
+</div>
     <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Paradigmenanalyse</h4>
-      </div>
-      <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
-      <ul>
-        <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-        <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
-        <li>Systemisches Lernen nach Senge & Automatisierung</li>
-      </ul>
-    </div>
-
-    <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Kulturdiagnostik</h4>
-      </div>
+      🧭<br><hr>
+      <h4>Kulturdiagnostik</h4>
       <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
     </div>
-
     <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Change-Coaching</h4>
-      </div>
+      👥<br><hr>
+      <h4>Change-Coaching</h4>
       <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
     </div>
   </div>
-
   <div style="flex: 1;">
     <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">KI-Framing Workshops</h4>
-      </div>
+      🗣️<br><hr>
+      <h4>KI-Framing Workshops</h4>
       <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
     </div>
-
     <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Systemisches Design</h4>
-      </div>
+      🧠<br><hr>
+      <h4>Systemisches Design</h4>
       <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
     </div>
-
     <div class="feature-box">
-      <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Prototypische Teams</h4>
-      </div>
+      🤖<br><hr>
+      <h4>Prototypische Teams</h4>
       <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
     </div>
   </div>
