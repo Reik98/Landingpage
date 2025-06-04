@@ -1,7 +1,6 @@
 import streamlit as st
 
-
-# CSS mit Logo und Layout
+def show_header():
 st.markdown("""
     <style>
         html {
