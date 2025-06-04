@@ -182,7 +182,7 @@ st.markdown("""
 .divider span {
   color: #444;
   font-weight: 600;
-  font-size: 3.5rem; /* 👈 Schriftgröße hier anpassen */
+  font-size: 2.5rem; /* 👈 Schriftgröße hier anpassen */
 }
 </style>
 
