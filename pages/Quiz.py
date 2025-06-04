@@ -17,6 +17,7 @@ st.markdown("""
         width: 100%;
         height: 500px;
         top: 20px;
+        margin-bottom: 2rem; /* 👈 Abstand zum nächsten Abschnitt */
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Bild_Quiz.png');
         background-size: cover;
