@@ -5,7 +5,7 @@ st.set_page_config(page_title="KI als Kollege", layout="centered")
 st.title("KI als Kollege")
 st.markdown("### Mit strukturiertem Change Management zur erfolgreichen Team-Integration von KI-Agenten")
 
-st.image("team_meeting.png")  # Optional: Bild lokal einbinden
+st.image("image.png")  # Optional: Bild lokal einbinden
 
 st.markdown("""
 **Warum Mitarbeiter KI ablehnen:**
