@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 st.set_page_config(
@@ -6,30 +5,22 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS mit Logo, Hintergrundbild und Scroll-Verhalten
+# CSS mit Logo und Layout
 st.markdown("""
     <style>
         html {
             scroll-behavior: smooth;
         }
-
-
-.logo-container {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 190px;
-    height: 160px;
-    background-image: url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1000;
-}
-
-
-
-       
+        .logo-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .logo-container img {
+            width: 190px;
+            height: auto;
+        }
         .hero {
             position: relative;
             width: 100%;
@@ -87,13 +78,12 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Logo oben links
+# Logo oben links (direkt als Bild eingebunden, nicht per CSS-Hintergrund)
 st.markdown("""
 <div class="logo-container">
-    
+    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
 </div>
 """, unsafe_allow_html=True)
-
 
 # Hero-Sektion mit Scroll-Link
 st.markdown("""
@@ -145,4 +135,4 @@ with st.form("form", clear_on_submit=True):
         st.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.")
 
 # Footer
-st.markdown('<footer>&copy; 2025 KI-Beratung GmbH – DSGVO-konform · Impressum · Datenschutz</footer>', unsafe_allow_html=True)
+st.markdown('<footer>&copy; 2025 Aicura Consulting – DSGVO-konform · Impressum · Datenschutz</footer>', unsafe_allow_html=True)
