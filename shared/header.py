@@ -36,14 +36,9 @@ def show_header():
         </style>
     """, unsafe_allow_html=True)
 
-    # HTML-Struktur für Header und Navigation
-    st.markdown("""
-        <header>
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
-            <div class="nav-container">
-                <a href="/">🏠 Home</a>
-                <a href="/Quiz">📋 Quiz</a>
-            </div>
-        </header>
-    """, unsafe_allow_html=True)
+with st.container():
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col3:
+        st.page_link("Home.py", label="🏠 Home")
+        st.page_link("pages/Quiz.py", label="📋 Quiz")
+
