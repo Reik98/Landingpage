@@ -80,7 +80,7 @@ def show_header():
         }
 
         .nav-container a {
-            color: #ffffff !important;
+            color: #000000 !important;
         }
 
         .nav-container a:hover {
