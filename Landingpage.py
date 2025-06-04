@@ -5,9 +5,12 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS mit GitHub-Link zum Bild
+# CSS mit GitHub-Link zum Bild und Scroll-Verhalten
 st.markdown("""
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         .hero {
             position: relative;
             width: 100%;
@@ -65,7 +68,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Hero-Sektion
+# Hero-Sektion mit Scroll-Link
 st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
@@ -78,12 +81,12 @@ st.markdown("""
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
-    ("Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
-    ("Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
-    ("Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
-    ("KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
-    ("Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
-    ("Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
+    ("📊 Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
+    ("🧭 Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
+    ("👥 Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
+    ("🗣️ KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
+    ("🧠 Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
+    ("🤖 Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
 ]
 
 for title, desc in features:
@@ -96,7 +99,8 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Kontaktformular
+# Anker für Formular
+st.markdown('<div id="form"></div>', unsafe_allow_html=True)
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
     name = st.text_input("Name")
