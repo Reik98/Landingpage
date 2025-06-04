@@ -59,11 +59,15 @@ st.markdown("""
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
-        .hero u1 {
+        .catchfrase {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
         }
-        .hero u2 {
+        .catchfrase u1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .catchfrase u2 {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
@@ -109,6 +113,13 @@ st.markdown("""
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
     <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
     <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+    <u1>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: </u1>
+    <u2>stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</u2>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="catchfrase">
     <u1>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: </u1>
     <u2>stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</u2>
 </div>
