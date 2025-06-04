@@ -56,8 +56,9 @@ def show_header():
     }
 
     @media (max-width: 768px) {
-        header {
-            #flex-direction: column;
+        header {  
+            flex-wrap: wrap;
+            justify-content: space-between;
             height: auto;
             padding: 1rem;
             align-items: flex-start;
@@ -67,10 +68,10 @@ def show_header():
         .logo-partner { height: 28px; margin-bottom: 0.5rem; }
 
         .nav-container {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
+            flex-direction: row; /* ✅ sorgt für nebeneinander */
+            gap: 1rem;
             margin-top: 0.5rem;
+            flex-wrap: wrap;
         }
 
         .nav-container a {
