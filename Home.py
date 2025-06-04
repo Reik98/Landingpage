@@ -111,7 +111,7 @@ st.markdown("""
       <ul>
         <li>Analyse Ihrer bestehenden Veränderungslogik</li>
         <li>Bewertung aktueller Modelle auf Zukunftstauglichkeit</li>
-        <li>Optional: Team-Workshop zur kollektiven Reflexion</li>
+        <li>Team-Workshop zur kollektiven Reflexion</li>
       </ul>
     </div>
     <div class="feature-box">
