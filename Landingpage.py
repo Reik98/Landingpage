@@ -143,15 +143,16 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
     <div class="feature-box">
-      <br>📊</br>
-      <hr>
-      <h4>Paradigmenanalyse</h4>
-      <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
-      <ul>
-        <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-        <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
-        <li>Systemisches Lernen nach Senge & Automatisierung</li>
-      </ul>
+      📊<br>
+<hr>
+<h4>Paradigmenanalyse</h4>
+<p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
+<ul>
+  <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
+  <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
+  <li>Systemisches Lernen nach Senge & Automatisierung</li>
+</ul>
+
     </div>
     <div class="feature-box">
       <h4>🧭 Kulturdiagnostik</h4>
