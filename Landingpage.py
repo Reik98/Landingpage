@@ -177,6 +177,7 @@ st.markdown("""
       <h4>Kulturdiagnostik</h4>
       <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
     </div>
+</div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -184,6 +185,7 @@ st.markdown("""
       <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
     </div>
   </div>
+</div>
   <div style="flex: 1;">
     <div class="feature-box">
       <div class="centered-image">
@@ -191,17 +193,20 @@ st.markdown("""
       <h4>KI-Framing Workshops</h4>
       <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
     </div>
+</div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
       <h4>Systemisches Design</h4>
       <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
     </div>
+</div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
       <h4>Prototypische Teams</h4>
       <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
+      </div>
     </div>
   </div>
 </div>
