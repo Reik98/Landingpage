@@ -5,7 +5,7 @@ def show_header():
        <style>
     header {
         position: fixed;
-        top: 2.5rem;
+        top: 3.0rem;
         left: 0;
         width: 100%;
         height: 110px;  /* feste Höhe */
@@ -46,7 +46,7 @@ def show_header():
     }
 
     body {
-        padding-top: calc(2.5rem + 110px);  /* ➕ Platz für Header */
+        padding-top: calc(3.0rem + 110px);  /* ➕ Platz für Header */
     }
 
     @media (max-width: 768px) {
@@ -70,7 +70,7 @@ def show_header():
         .nav-container a { font-size: 1rem; }
 
         body {
-            padding-top: calc(2.5rem + 140px);  /* ⬆️ erhöht für Mobilheader */
+            padding-top: calc(3.0rem + 140px);  /* ⬆️ erhöht für Mobilheader */
         }
     }
 
