@@ -14,7 +14,7 @@ st.markdown("""
         }
         .logo-container {
             position: fixed;
-            top: 20px;
+            top: 10px;
             left: 20px;
             width: 10%;
             height: 200px;
