@@ -27,7 +27,7 @@ st.markdown("""
             }
 
         header img {
-            height: 100px;
+            height: 200px;
             }
         .hero {
             position: relative;
