@@ -5,10 +5,10 @@ def show_header():
         <style>
         header {
             position: fixed;
-            top: 60px;
+            top: 0;
             left: 0;
             width: 100%;
-            height: 150px;
+            height: 110px;
             background-color: white;
             z-index: 999;
             display: flex;
@@ -18,12 +18,13 @@ def show_header():
         }
 
         .logo-main {
-            height: 90px;
+            height: 70px;
             margin-right: 1rem;
+            transition: filter 0.3s ease;
         }
 
         .logo-partner {
-            height: 45px;
+            height: 35px;
             margin-right: 2rem;
         }
 
@@ -44,23 +45,27 @@ def show_header():
             text-decoration: underline;
         }
 
-        /* 🔹 Mobile Optimierung */
+        body {
+            padding-top: 120px;  /* 👈 Verhindert Überlagerung durch festen Header */
+        }
+
+        /* 🔹 Mobile */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
+                align-items: flex-start;
                 height: auto;
                 padding: 1rem;
-                align-items: flex-start;
             }
 
             .logo-main {
-                height: 60px;
+                height: 50px;
                 margin-bottom: 0.5rem;
             }
 
             .logo-partner {
-                height: 30px;
-                margin-bottom: 1rem;
+                height: 28px;
+                margin-bottom: 0.5rem;
             }
 
             .nav-container {
@@ -73,13 +78,21 @@ def show_header():
             .nav-container a {
                 font-size: 1rem;
             }
+
+            body {
+                padding-top: 150px;
+            }
         }
 
-        /* 🔹 Dark Mode */
+        /* 🔹 Darkmode */
         @media (prefers-color-scheme: dark) {
             header {
                 background-color: #1e1e1e;
                 box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+            }
+
+            .logo-main {
+                filter: brightness(200%) contrast(120%);
             }
 
             .nav-container a {
@@ -88,7 +101,10 @@ def show_header():
 
             .nav-container a:hover {
                 color: #00c6d2;
-                text-decoration: underline;
+            }
+
+            body {
+                background-color: #1e1e1e;
             }
         }
         </style>
