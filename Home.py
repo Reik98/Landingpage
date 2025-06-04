@@ -109,24 +109,34 @@ st.markdown("""
       </div>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
-        <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-        <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
-        <li>Systemisches Lernen nach Senge & Automatisierung</li>
+        <li>Analyse Ihrer bestehenden Veränderungslogik</li>
+        <li>Bewertung aktueller Modelle auf Zukunftstauglichkeit</li>
+        <li>Optional: Team-Workshop zur kollektiven Reflexion</li>
       </ul>
     </div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Kulturdiagnostik</h4>
+        <h4 class="centered-heading">Kulturdiagnostik & Integrationsstrategie</h4>
       </div>
       <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
+      <ul>
+        <li>Tool-gestützte Ist-Erhebung kultureller Reife (z. B. Akzeptanzgrade KI, Wertekompass)</li>
+        <li>Entwicklung von Rollenmodellen für „KI im Team“</li>
+        <li>Integrationsstrategie inkl. kulturellem Re-Design</li>
+      </ul>
     </div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-        <h4 class="centered-heading">Change-Coaching</h4>
+        <h4 class="centered-heading">Change-Coaching & Impulsformate</h4>
       </div>
       <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
+      <ul>
+        <li>„KI verändert Führung“ – Impulsvortrag für Führungskräfte</li>
+        <li>„Systemisches Denken im Zeitalter von KI“ – Teamworkshop</li>
+        <li>„Framing & Narrative für KI-Kommunikation“ – Kommunikationsstrategie</li>
+      </ul>
     </div>
   </div>
   <div style="flex: 1;">
