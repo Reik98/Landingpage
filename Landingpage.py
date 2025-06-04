@@ -105,16 +105,13 @@ st.markdown("""
         text-decoration: none;
     }
         .feature-box {
-        background-color: #ffffff;
+            background-color: #ffffff;
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            text-align: center; /* Text und Inhalte zentrieren */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Inhalte horizontal zentrieren */
-            justify-content: center; /* Inhalte vertikal zentrieren, falls nötig */
+            margin-bottom: 1.5rem;
         }
+
         .feature-box h4 {
             margin-top: 0;
             color: #003865;
