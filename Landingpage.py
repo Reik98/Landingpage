@@ -224,7 +224,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# 🎯 QUIZ-BLOCK
+# 📋 Mini-Quiz: Ist Ihre Organisation KI-fähig?
 st.markdown("## 📋 Ist Ihre Organisation KI-fähig?")
 
 questions = {
@@ -235,33 +235,40 @@ questions = {
     "5. Wie gut sind Ihre Datenprozesse auf KI vorbereitet?": ["Sehr gut", "Teilweise", "Schwach"]
 }
 
-scores = []
-for q, opts in questions.items():
-    answer = st.radio(q, opts, key=q)
-    scores.append(opts.index(answer))
+responses = []
+for q, options in questions.items():
+    choice = st.radio(q, options, key=q)
+    responses.append(choice)
 
-if all(s is not None for s in scores):
-    total_score = sum(scores)
-    st.subheader("📈 Ihr Ergebnis:")
+# Button zum Auswerten
+if st.button("Ergebnis auswerten"):
+    if all(responses):
+        score = sum([questions[q].index(answer) for q, answer in zip(questions.keys(), responses)])
 
-    if total_score <= 3:
-        st.success("✅ Sehr gute Voraussetzungen für KI-Einführung!")
-        recommendation = "Sie sind bereit für komplexe KI-Projekte – denken Sie über agentenbasierte Automation nach."
-    elif total_score <= 6:
-        st.info("🟡 Gute Basis, aber es besteht Handlungsbedarf.")
-        recommendation = "Fokussieren Sie sich auf Change-Kommunikation und interne Weiterbildung."
+        st.subheader("📈 Ihr Ergebnis:")
+
+        if score <= 3:
+            st.success("✅ Sehr gute Voraussetzungen für KI-Einführung!")
+            recommendation = "Sie sind bereit für komplexe KI-Projekte – denken Sie über agentenbasierte Automation nach."
+        elif score <= 6:
+            st.info("🟡 Gute Basis, aber es besteht Handlungsbedarf.")
+            recommendation = "Fokussieren Sie sich auf Change-Kommunikation und interne Weiterbildung."
+        else:
+            st.warning("🔴 Ihre Organisation ist noch nicht KI-fähig.")
+            recommendation = "Beginnen Sie mit einer Kulturdiagnose und ersten Pilotprojekten."
+
+        st.markdown(f"**Empfehlung:** {recommendation}")
+
+        # E-Mail-Erfassungsformular
+        with st.form("email_form"):
+            st.markdown("📩 **Sie möchten die Auswertung & Empfehlung per E-Mail?**")
+            email = st.text_input("Ihre E-Mail-Adresse")
+            send_email = st.form_submit_button("Absenden")
+            if send_email:
+                st.success(f"Vielen Dank! Ihre Empfehlung wurde an {email} gesendet.")
     else:
-        st.warning("🔴 Ihre Organisation ist noch nicht KI-fähig.")
-        recommendation = "Beginnen Sie mit einer Kulturdiagnose und ersten Pilotprojekten."
+        st.error("Bitte beantworten Sie alle Fragen, bevor Sie das Ergebnis auswerten.")
 
-    st.markdown(f"**Empfehlung:** {recommendation}")
-
-    with st.form("email_form"):
-        st.markdown("📩 **Sie möchten die detaillierte Auswertung & Handlungsempfehlung per E-Mail?**")
-        email = st.text_input("Ihre E-Mail-Adresse")
-        submitted = st.form_submit_button("Absenden")
-        if submitted:
-            st.success(f"Vielen Dank! Ihre Empfehlung wurde an {email} gesendet.")
 
 # 📮 KONTAKT
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
