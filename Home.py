@@ -84,6 +84,53 @@ st.markdown("""
             font-size: 0.9rem; color: #888;
         }
     </style>
+
+    <style>
+/* Responsive mobile optimizations */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .catchfrase {
+        height: auto;
+        padding: 1rem;
+    }
+    .catchfrase h3 {
+        font-size: 1.5rem;
+    }
+    .catchfrase p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 1rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .Logo-Bereiche {
+        height: 70px;
+    }
+    .feature-box {
+        height: auto;
+        padding: 1rem;
+    }
+    .feature-box ul {
+        padding-left: 1rem;
+    }
+    .centered-heading {
+        font-size: 1.2rem;
+    }
+}
+</style>
+
 """, unsafe_allow_html=True)
 
 # --- Hero-Bereich ---
