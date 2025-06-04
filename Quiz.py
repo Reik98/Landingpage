@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 # 📋 Mini-Quiz: Ist Ihre Organisation KI-fähig?
 st.markdown("## 📋 Ist Ihre Organisation KI-fähig?")
 
