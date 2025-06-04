@@ -51,7 +51,12 @@ st.markdown("""
             display: inline-block;
         }
 
-        .cta-button:hover { color: #FFF; text-decoration: none; }
+        .cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
+        background-color: #008B92;
+        color: #FFFFFF;
+        text-decoration: none;
+        }
+
 
         .feature-box {
             background-color: #ffffff; height: 400px;
