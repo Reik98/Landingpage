@@ -142,7 +142,7 @@ st.markdown("""
   <div style="flex: 1;">
     <div class="feature-box">
       <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/meeting.png" class="Logo-Bereiche">
         <h4 class="centered-heading">KI-Framing Workshops</h4>
       </div>
       <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
