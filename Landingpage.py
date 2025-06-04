@@ -17,7 +17,7 @@ st.markdown("""
             top: 60px;
             left: 0;
             width: 100%;
-            height: 250px;
+            height: 150px;
             background-color: white;
             z-index: 999;
             display: flex;
@@ -32,7 +32,7 @@ st.markdown("""
         .hero {
             position: relative;
             width: 100%;
-            height: 400px;
+            height: 600px;
             top: 20px;
             background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
             url('https://raw.githubusercontent.com/Reik98/Landingpage/main/image.png');
