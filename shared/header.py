@@ -57,7 +57,7 @@ def show_header():
 
     @media (max-width: 768px) {
         header {
-            flex-direction: column;
+            #flex-direction: column;
             height: auto;
             padding: 1rem;
             align-items: flex-start;
