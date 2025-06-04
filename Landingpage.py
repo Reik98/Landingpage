@@ -66,11 +66,11 @@ st.markdown("""
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             margin-bottom: 1.5rem;
         }
-        .catchfrase u1 {
+        .catchfrase h1 {
             font-size: 2.2rem;
             margin-bottom: 0.5rem;
         }
-        .catchfrase u2 {
+        .catchfrase p {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
@@ -121,8 +121,8 @@ st.markdown("""
 
 st.markdown("""
 <div class="catchfrase">
-    <u1>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: </u1>
-    <u2>stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</u2>
+    <h1>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: </h1>
+    <p>stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</p>
 </div>
 """, unsafe_allow_html=True)
 
