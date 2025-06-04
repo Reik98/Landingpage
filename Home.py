@@ -51,10 +51,10 @@ st.markdown("""
             display: inline-block;
         }
 
-        cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
+        a.cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
         background-color: #008B92;
         color: #FFFFFF;
-        text-decoration: none;
+        text-decoration: underline;
         }
 
 
