@@ -41,21 +41,21 @@ st.markdown("""
         .catchfrase h3 { font-size: 2.2rem; margin-bottom: 0.5rem; }
         .catchfrase p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 
-        cta-button {
-            background-color: #008B92; /* neue Farbe */
+       .cta-button {
+            background-color: #008B92;
             color: #FFFFFF;
             padding: 1rem 2rem;
             border-radius: 8px;
-            text-decoration: none;
             font-weight: bold;
             display: inline-block;
-        }
+            text-decoration: none; /* kein Unterstrich standardmäßig */
+            }
+            
+        .cta-button:hover {
+            text-decoration: underline; /* Unterstrich beim Hover */
+            color: #FFFFFF; /* Textfarbe beibehalten */
+            }
 
-        cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
-        background-color: #008B92;
-        color: #FFFFFF;
-        text-decoration: none;
-        }
 
 
         .feature-box {
