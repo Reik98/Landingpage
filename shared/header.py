@@ -36,7 +36,7 @@ def show_header():
     }
 
     .nav-container a {
-        color: #003865;
+        color: #000000;
         text-decoration: none;
         font-size: 1.1rem;
     }
