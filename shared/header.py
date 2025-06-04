@@ -1,9 +1,5 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
-    layout="wide"
-)
 
 # CSS mit Logo und Layout
 st.markdown("""
