@@ -68,7 +68,7 @@ st.markdown("""
         }
         .catchfrase u1 {
             font-size: 2.2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
         }
         .catchfrase u2 {
             font-size: 1.2rem;
