@@ -247,6 +247,50 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.header("📊 Ist Ihre Organisation KI-fähig?")
+
+# Fragen & Antworten
+questions = {
+    "1. Gibt es eine KI-Strategie im Unternehmen?": ["Ja, klar definiert", "Teilweise", "Nein"],
+    "2. Wie hoch ist das Vertrauen der Mitarbeitenden in KI-Systeme?": ["Hoch", "Mittel", "Gering"],
+    "3. Welche Rolle spielt KI in Entscheidungsprozessen?": ["Zentrale Rolle", "Unterstützend", "Keine Rolle"],
+    "4. Gibt es Weiterbildungsangebote zu KI?": ["Regelmäßig", "Geplant", "Keine"],
+    "5. Wie gut sind Ihre Datenprozesse auf KI vorbereitet?": ["Sehr gut", "Teilweise", "Schwach"]
+}
+
+scores = []
+for q, opts in questions.items():
+    answer = st.radio(q, opts, key=q)
+    scores.append(opts.index(answer))  # 0 = beste, 2 = schlechteste Antwort
+
+# Auswertung
+if all(s is not None for s in scores):
+    total_score = sum(scores)
+    st.subheader("📈 Ihr Ergebnis:")
+
+    if total_score <= 3:
+        st.success("✅ Sehr gute Voraussetzungen für KI-Einführung!")
+        recommendation = "Sie sind bereit für komplexe KI-Projekte – denken Sie über agentenbasierte Automation nach."
+    elif total_score <= 6:
+        st.info("🟡 Gute Basis, aber es besteht Handlungsbedarf.")
+        recommendation = "Fokussieren Sie sich auf Change-Kommunikation und interne Weiterbildung."
+    else:
+        st.warning("🔴 Ihre Organisation ist noch nicht KI-fähig.")
+        recommendation = "Beginnen Sie mit einer Kulturdiagnose und ersten Pilotprojekten."
+
+    st.markdown(f"**Empfehlung:** {recommendation}")
+
+    # E-Mail-Abfrage
+    with st.form("email_form"):
+        st.markdown("📩 **Sie möchten die detaillierte Auswertung & Handlungsempfehlung per E-Mail?**")
+        email = st.text_input("Ihre E-Mail-Adresse")
+        submitted = st.form_submit_button("Absenden")
+
+        if submitted:
+            # → hier kann später eine E-Mail-Funktion eingebaut werden
+            st.success(f"Vielen Dank! Ihre Empfehlung wurde an {email} gesendet.")
+
+
 
 # Kontaktformular
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
