@@ -85,7 +85,7 @@ st.markdown("""
 # Logo oben links
 st.markdown("""
 <header>
-    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo1.png" alt="Aicura Logo">
+    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" alt="Aicura Logo">
 </header>
 """, unsafe_allow_html=True)
 
