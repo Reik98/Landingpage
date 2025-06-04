@@ -18,8 +18,8 @@ st.markdown("""
             z-index: 1000;
         }
         .logo-container img {
-            width: 190px;
-            height: 150px;
+            width: 210px;
+            height: auto;
         }
         .hero {
             position: relative;
