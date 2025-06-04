@@ -145,11 +145,11 @@ st.markdown("""
         }
     .cta-button {
         background-color: #008B92 !important;
-        color: #000000 !important;
+        color: #ffffff !important;
     }
     .cta-button:hover {
         background-color: #008B92 !important;
-        color: #000 !important;
+        color: #ffffff !important;
     }
     footer {
         color: #ccc;
