@@ -1,11 +1,9 @@
 import streamlit as st
-import sys
 import os
-
-# Aktuelles Verzeichnis zum Importpfad hinzufügen
+import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
-from shared.header import show_header  # Korrekt so
+from shared.header import show_header
 
 
 st.set_page_config(
