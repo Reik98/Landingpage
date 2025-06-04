@@ -114,8 +114,8 @@ def show_header():
             </a>
             <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
             <div class="nav-container">
-                <a href="/">🏠 Home</a>
-                <a href="/Quiz">📋 Quiz</a>
+                <a href="/">Home</a>
+                <a href="/Quiz">Quiz</a>
             </div>
         </header>
     """, unsafe_allow_html=True)
