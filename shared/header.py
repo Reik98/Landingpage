@@ -1,20 +1,5 @@
 import streamlit as st
 
-st.markdown("""
-    <style>
-        /* Versteckt die gesamte Seitenleiste */
-        section[data-testid="stSidebar"] {
-            display: none !important;
-        }
-
-        /* Verschiebt den Seiteninhalt ganz nach links */
-        div[data-testid="stAppViewContainer"] > div:first-child {
-            margin-left: 0rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-
 def show_header():
     st.markdown("""
         <style>
