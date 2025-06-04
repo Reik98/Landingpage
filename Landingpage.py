@@ -223,10 +223,10 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
+# Quiz
 st.markdown("""
 <div style="text-align: center; margin: 3rem 0;">
-    <a href="https://deine-domain.de/ki_quiz" target="_blank" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 3rem;">
+    <a href="https://raw.githubusercontent.com/Reik98/Landingpage/main/Quiz.py" target="_blank" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 3rem;">
         Jetzt kostenlos prüfen, ob Ihr Unternehmen KI-fähig ist
     </a>
 </div>
