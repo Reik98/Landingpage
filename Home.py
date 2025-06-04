@@ -46,7 +46,7 @@ st.markdown("""
             color: #FFFFFF;
             padding: 1rem 2rem;
             border-radius: 8px;
-            text-decoration: none !important;
+            text-decoration: none;
             font-weight: bold;
             display: inline-block;
         }
@@ -54,7 +54,7 @@ st.markdown("""
         a.cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
         background-color: #008B92;
         color: #FFFFFF;
-        text-decoration: underline;
+        text-decoration: none;
         }
 
 
