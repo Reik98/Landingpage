@@ -60,6 +60,7 @@ st.markdown("""
             margin-bottom: 1.5rem;
         }
         .catchfrase {
+            top: 20px;
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
         }
