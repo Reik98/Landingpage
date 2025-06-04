@@ -12,24 +12,23 @@ st.markdown("""
         html {
             scroll-behavior: smooth;
         }
-        .logo-container {
-            position: fixed;
-            top: -10px;
-            left: 20px;
-            width: 10%;
-            height: 200px;
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-            url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            
-        }
+
+
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 60px;
+    background-image: url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+}
+
+
+
        
         .hero {
             position: relative;
