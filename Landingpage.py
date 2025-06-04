@@ -33,10 +33,14 @@ st.markdown("""
         .logo-partner {
             height: 45px;
             }
-        .Logo-Bereiche {
-            position: fixed;
-            height: 90px;
-            }
+.Logo-Bereiche { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-top: 20px;
+}
+
 
         .hero {
             position: relative;
