@@ -166,7 +166,7 @@ st.markdown("""
     </div>
     <div class="feature-box">
       <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/prototyp.png" class="Logo-Bereiche">
         <h4 class="centered-heading">Prototypische Teams</h4>
       </div>
       <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
