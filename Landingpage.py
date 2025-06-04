@@ -5,10 +5,8 @@ st.set_page_config(
     layout="wide"
 )
 
-video_url = "https://raw.githubusercontent.com/Reik98/Landingpage/main/Banner_Video.mp4"
-
-# CSS mit Video + separatem dunklem Overlay + Text im Vordergrund
-st.markdown(f"""
+# CSS mit sichtbarem Hintergrundbild (GitHub-Link) + Styling
+st.markdown("""
     <style>
         html {{
             scroll-behavior: smooth;
@@ -17,42 +15,23 @@ st.markdown(f"""
             position: relative;
             width: 100%;
             height: 450px;
-            overflow: hidden;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+            url('https://raw.githubusercontent.com/Reik98/Landingpage/main/image.png');
+            background-size: cover;
+            background-position: center;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-        }}
-        .hero video {{
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            z-index: 0;
-        }}
-        .hero::before {{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* dunkler Overlay */
-            z-index: 1;
-        }}
-        .hero-content {{
-            position: relative;
-            z-index: 2;
-            text-align: center;
             color: white;
+            text-align: center;
             text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }}
-        .hero-content h1 {{
+        .hero h1 {{
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
         }}
-        .hero-content p {{
+        .hero p {{
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }}
@@ -87,29 +66,27 @@ st.markdown(f"""
             color: #888;
         }}
     </style>
-
-    <div class="hero">
-        <video autoplay loop muted playsinline>
-            <source src="{video_url}" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
-            <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
-            <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
-        </div>
-    </div>
 """, unsafe_allow_html=True)
 
-# Leistungsbeschreibung
+# Hero mit Anker-Link zum Formular
+st.markdown("""
+<div class="hero">
+    <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
+    <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
+    <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+</div>
+""", unsafe_allow_html=True)
+
+# Feature Grid
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
-    ("📊 Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
-    ("🧭 Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
-    ("👥 Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
-    ("🗣️ KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
-    ("🧠 Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
-    ("🤖 Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
+    ("Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
+    ("Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
+    ("Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
+    ("KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
+    ("Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
+    ("Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
 ]
 
 for title, desc in features:
@@ -122,7 +99,7 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Kontaktformular mit Scroll-Ziel
+# Formular mit Scroll-Ziel
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
