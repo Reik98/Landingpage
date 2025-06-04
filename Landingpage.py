@@ -19,7 +19,7 @@ st.markdown("""
         }
         .logo-container img {
             width: 190px;
-            height: 100px;
+            height: 10px;
         }
         .hero {
             position: relative;
