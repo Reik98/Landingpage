@@ -143,7 +143,7 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
     <div class="feature-box">
-      <h4>📊</h4>
+      <br>📊</br>
       <h4>Paradigmenanalyse</h4>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
