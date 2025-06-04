@@ -136,14 +136,14 @@ st.markdown("""
     .feature-box h4,
     .catchfrase h3,
     .centered-heading {
-        color: #fddb3a !important;
+        color: #008B92 !important;
     }
     .cta-button {
-        background-color: #fddb3a !important;
+        background-color: #008B92 !important;
         color: #000000 !important;
     }
     .cta-button:hover {
-        background-color: #ffe866 !important;
+        background-color: #008B92 !important;
         color: #000 !important;
     }
     footer {
