@@ -15,7 +15,7 @@ st.markdown("""
     .quiz-intro {
         position: relative;
         width: 100%;
-        height: 550px;
+        height: 500px;
         top: 20px;
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Bild_Quiz.png');
@@ -104,7 +104,7 @@ st.markdown("""
 </style>
 
 <div class="quiz-intro">
-    <h2>📋 Ist Ihre Organisation KI-fähig?</h2>
+    <h2>Ist Ihre Organisation KI-fähig?</h2>
     <p>Beantworten Sie 5 kurze Fragen und erhalten Sie direkt eine Einschätzung zur kulturellen und organisatorischen KI-Reife.</p>
 </div>
 """, unsafe_allow_html=True)
