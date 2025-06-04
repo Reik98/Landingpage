@@ -37,10 +37,15 @@ st.markdown("""
     text-align: center;
     margin-bottom: 1rem;
 }
+.centered-heading {
+    margin-top: 0.5rem;
+    color: #003865;
+}
 .Logo-Bereiche {
     height: 90px;
     width: auto;
 }
+
 
 
 
@@ -153,11 +158,11 @@ st.markdown("""
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
-    <div class="feature-box">
+<div class="feature-box">
   <div class="centered-image">
     <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-  <div class="centered-image">
-  <h4>Paradigmenanalyse</h4>
+    <h4 class="centered-heading">Paradigmenanalyse</h4>
+  </div>
   </div>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
