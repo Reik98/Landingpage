@@ -79,7 +79,7 @@ def show_header():
             background-color: #ffffff !important; /* heller Hintergrund im Darkmode */
             }
             .nav-container a {
-            color: #000000 !important; /* Schriftfarbe auf helles Weiß umstellen */
+            color: #ffffff !important; /* Schriftfarbe auf helles Weiß umstellen */
         }
         }
 
