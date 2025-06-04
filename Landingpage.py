@@ -5,14 +5,15 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS mit Overlay + Bild
+# CSS mit GitHub-Link zum Bild
 st.markdown("""
     <style>
         .hero {
             position: relative;
             width: 100%;
             height: 450px;
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image.png');
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+            url('https://raw.githubusercontent.com/Reik98/Landingpage/main/image.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -64,7 +65,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Hero mit sichtbarem Hintergrundbild
+# Hero-Sektion
 st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
@@ -95,7 +96,7 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Formular
+# Kontaktformular
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
     name = st.text_input("Name")
