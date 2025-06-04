@@ -151,7 +151,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Quiz-Button (intern) ---
-st.page_link("pages/1_Quiz.py", label="📋 Jetzt kostenlos prüfen, ob Ihr Unternehmen KI-fähig ist", icon="🧠")
 st.markdown("""
 <div style="text-align: center; margin: 3rem 0;">
     <a href="/1_Quiz" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 3rem;">
