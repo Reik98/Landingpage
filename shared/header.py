@@ -36,14 +36,20 @@ def show_header():
     }
 
     .nav-container a {
-        color: #000000 !important;
-        text-decoration: none;
-        font-size: 1.1rem;
-    }
+    background-color: #008B92;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
 
-    .nav-container a:hover {
-        text-decoration: underline;
-    }
+.nav-container a:hover {
+    background-color: #00c6d2;
+    color: #000;
+    text-decoration: none;
+}
 
     body {
         padding-top: calc(3.0rem + 110px);
