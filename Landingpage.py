@@ -7,26 +7,17 @@ st.set_page_config(
 
 video_url = "https://raw.githubusercontent.com/Reik98/Landingpage/main/Banner_Video.mp4"
 
-# CSS für Videohintergrund
+# CSS + Video direkt im Hero-Block
 st.markdown(f"""
     <style>
         html {{
             scroll-behavior: smooth;
         }}
-        .video-background {{
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.2;
-        }}
         .hero {{
             position: relative;
             width: 100%;
             height: 450px;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -34,6 +25,19 @@ st.markdown(f"""
             color: white;
             text-align: center;
             text-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }}
+        .hero video {{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.25;
+        }}
+        .hero-content {{
+            position: relative;
             z-index: 1;
         }}
         .hero h1 {{
@@ -76,21 +80,19 @@ st.markdown(f"""
         }}
     </style>
 
-    <video autoplay loop muted playsinline class="video-background">
-        <source src="{video_url}" type="video/mp4">
-    </video>
+    <div class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="{video_url}" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
+            <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
+            <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+        </div>
+    </div>
 """, unsafe_allow_html=True)
 
-# Hero-Sektion mit CTA
-st.markdown("""
-<div class="hero">
-    <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
-    <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
-    <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
-</div>
-""", unsafe_allow_html=True)
-
-# Leistungsbeschreibung
+# Feature Grid
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
@@ -112,7 +114,7 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Formular mit Scroll-Ziel
+# Kontaktformular mit Scroll-Ziel
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
