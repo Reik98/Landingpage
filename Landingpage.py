@@ -169,7 +169,6 @@ st.markdown("""
         <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
         <li>Systemisches Lernen nach Senge & Automatisierung</li>
       </ul>
-    </div>
 
     <div class="feature-box">
       <div class="centered-image">
@@ -195,7 +194,6 @@ st.markdown("""
         <h4 class="centered-heading">KI-Framing Workshops</h4>
       </div>
       <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
-    </div>
 
     <div class="feature-box">
       <div class="centered-image">
