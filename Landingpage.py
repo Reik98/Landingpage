@@ -4,6 +4,31 @@ st.set_page_config(
     page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
     layout="wide"
 )
+# CSS ERWEITERT mit Logo-Position
+st.markdown("""
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .logo-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .logo-container img {
+            height: 60px;
+        }
+        /* Bestehende Styles bleiben unverändert */
+        ...
+    </style>
+""", unsafe_allow_html=True)
+# Logo oben links anzeigen
+st.markdown("""
+<div class="logo-container">
+    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
+</div>
+""", unsafe_allow_html=True)
 
 # CSS mit GitHub-Link zum Bild und Scroll-Verhalten
 st.markdown("""
