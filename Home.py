@@ -90,7 +90,7 @@ st.markdown("""
     <h3>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen.</h3>
     <p>Stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln.</p>
     <p>Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv und systemische Modelle stoßen an ihre Grenzen.</p>
-    <p>Sie wollen nicht nur KI einführen – Sie wollen Ihre Organisation darauf ausrichten. Dafür bieten wir keine Standardberatung, sondern maßgeschneiderte kulturelle Entwicklung.<p>
+    <p>Sie wollen nicht nur KI einführen – Sie wollen Ihre Organisation darauf ausrichten? Dafür bieten wir keine Standardberatung, sondern maßgeschneiderte kulturelle Entwicklung.<p>
     <p>Wir helfen Ihnen dabei, ihre Organisation neu zu denken!</p>
 </div>
 """, unsafe_allow_html=True)
