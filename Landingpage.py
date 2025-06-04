@@ -17,7 +17,7 @@ st.markdown("""
             top: 60px;
             left: 0;
             width: 100%;
-            height: 100px;
+            height: 150px;
             background-color: white;
             z-index: 999;
             display: flex;
@@ -27,7 +27,7 @@ st.markdown("""
             }
 
         header img {
-            height: 300px;
+            height: 150px;
             }
         .hero {
             position: relative;
