@@ -22,6 +22,12 @@ st.markdown("""
         color: white; text-align: center;
         text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }
+.feature-box {
+            background-color: #ffffff; height: 400px;
+            padding: 1.5rem; border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
         
 </style>
    
