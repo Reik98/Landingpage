@@ -2,9 +2,11 @@ import streamlit as st
 import sys
 import os
 
-# Lokalen shared-Pfad zum Python-Importpfad hinzufügen
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "shared")))
-from header import show_header  # Funktion aus shared/header.py
+# Aktuelles Verzeichnis zum Importpfad hinzufügen
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+from shared.header import show_header  # Korrekt so
+
 
 st.set_page_config(
     page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
