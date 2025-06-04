@@ -33,6 +33,10 @@ st.markdown("""
         .logo-partner {
             height: 45px;
             }
+        .Logo-Bereiche {
+            position: fixed;
+            height: 90px;
+            }
 
         .hero {
             position: relative;
@@ -143,7 +147,7 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
     <div class="feature-box">
-      <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="logo-main" alt="Aicura Logo">
+      <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche"
       <h4>Paradigmenanalyse</h4>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
