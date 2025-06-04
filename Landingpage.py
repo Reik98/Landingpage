@@ -12,16 +12,23 @@ st.markdown("""
         html {
             scroll-behavior: smooth;
         }
-        .logo-container {
+        header {
             position: fixed;
-            top: -5px;
-            left: 20px;
-            z-index: 1000;
-        }
-        .logo-container img {
-            width: 210px;
-            height: auto;
-        }
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+
+        header img {
+            height: 50px;
+            }
         .hero {
             position: relative;
             width: 100%;
@@ -77,9 +84,9 @@ st.markdown("""
 
 # Logo oben links
 st.markdown("""
-<div class="logo-container">
+<header>
     <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
-</div>
+</header>
 """, unsafe_allow_html=True)
 
 # Hero-Sektion
