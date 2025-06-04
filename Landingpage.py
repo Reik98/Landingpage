@@ -69,29 +69,38 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Hero-Sektion mit Scroll-Link
+# Start Grid mit 2 Spalten
 st.markdown("""
-<div class="hero">
-    <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
-    <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
-    <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+<div class="feature-grid">
+  <div class="feature-box">
+    <h4>📊 Paradigmenanalyse</h4>
+    <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
+    <ul>
+      <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
+      <li>Adaptionsfähigkeit von Kotters 8-Stufen-Modell</li>
+      <li>Evaluation von Lernprozessen nach Senge in KI-Kontexten</li>
+    </ul>
+    
+    <h4>🧭 Kulturdiagnostik</h4>
+    <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
+    
+    <h4>👥 Change-Coaching</h4>
+    <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
+  </div>
+
+  <div class="feature-box">
+    <h4>🗣️ KI-Framing Workshops</h4>
+    <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
+    
+    <h4>🧠 Systemisches Design</h4>
+    <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
+    
+    <h4>🤖 Prototypische Teams</h4>
+    <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
+  </div>
 </div>
 """, unsafe_allow_html=True)
 
-features = [
-    ("📊 Paradigmenanalyse", """
-        Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.
-        <ul>
-          <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-          <li>Adaptionsfähigkeit von Kotters 8-Stufen-Modell</li>
-          <li>Evaluation von Lernprozessen nach Senge in KI-Kontexten</li>
-        </ul>
-    """),
-    ("🧭 Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
-    ("👥 Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
-    ("🗣️ KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
-    ("🧠 Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
-    ("🤖 Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
-]
 
 
 for title, desc in features:
