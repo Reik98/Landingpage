@@ -29,9 +29,7 @@ st.markdown("""
         header img_1 {
             height: 150px;
             }
-        header img_2 {
-            height: 150px;
-            }
+
         .hero {
             position: relative;
             width: 100%;
@@ -89,7 +87,6 @@ st.markdown("""
 st.markdown("""
 <header>
     <img_1 src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" alt="Aicura Logo">
-    <img_2 src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" alt="Aicura Logo">
 </header>
 """, unsafe_allow_html=True)
 
