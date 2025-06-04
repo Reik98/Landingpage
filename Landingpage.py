@@ -13,7 +13,7 @@ st.markdown("""
         }
         .logo-container {
             position: fixed;
-            top: -10px;
+            top: -5px;
             left: 20px;
             z-index: 1000;
         }
