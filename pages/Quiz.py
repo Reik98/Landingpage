@@ -15,7 +15,7 @@ st.markdown("""
     .quiz-intro {
         position: relative;
         width: 100%;
-        height: 580px;
+        height: 550px;
         top: 20px;
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Bild_Quiz.png');
