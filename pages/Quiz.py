@@ -3,7 +3,8 @@ from shared.header import show_header  # Header importieren
 
 st.set_page_config(
     page_title="KI-Fähigkeit Ihrer Organisation prüfen – Aicura Quiz",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"  # 👈 sorgt fürs Einklappen
 )
 
 show_header()  # Header anzeigen
