@@ -12,7 +12,7 @@ show_header()  # Header anzeigen
 # Optional: Intro-Abschnitt
 st.markdown("""
 <style>
- .quiz-intro {
+     .quiz-intro {
         position: relative; width: 100%; height: 600px; top: 20px;
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Bild_Quiz.png');
@@ -21,8 +21,7 @@ st.markdown("""
         justify-content: center; align-items: center;
         color: white; text-align: center;
         text-shadow: 0 0 10px rgba(0,0,0,0.6);
-        }
-        
+        }     
 </style>
    
 <div class="quiz-intro">
@@ -32,7 +31,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Fragen
-      questions = {
+questions = {
     "1. Gibt es eine KI-Strategie im Unternehmen?": ["Ja, klar definiert", "Teilweise", "Nein"],
     "2. Wie hoch ist das Vertrauen der Mitarbeitenden in KI-Systeme?": ["Hoch", "Mittel", "Gering"],
     "3. Welche Rolle spielt KI in Entscheidungsprozessen?": ["Zentrale Rolle", "Unterstützend", "Keine Rolle"],
