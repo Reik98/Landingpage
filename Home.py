@@ -4,6 +4,7 @@ from shared.header import show_header  # Gemeinsamer Header
 st.set_page_config(
     page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
     layout="wide"
+    initial_sidebar_state="collapsed"  # 👈 WICHTIG: Seitenleiste standardmäßig eingeklappt
 )
 
 show_header()  # Logos & Navigation
