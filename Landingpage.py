@@ -63,7 +63,7 @@ st.markdown("""
             background-color: #ffffff;
             width: 100%;
             height: 200px;
-            margin-top: 80px;  /* Feld weiter nach unten */
+            margin-top: 50px;  /* Feld weiter nach unten */
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
