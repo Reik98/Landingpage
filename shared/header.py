@@ -88,11 +88,11 @@ def show_header():
         }
 
         .nav-container a {
-            color: #000000 !important;
+            color: #ffffff !important;
         }
 
         .nav-container a:hover {
-            color: #000000 !important;
+            color: #ffffff !important;
             text-decoration: underline;
         }
 
