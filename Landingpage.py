@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 st.set_page_config(
@@ -44,10 +43,10 @@ st.markdown("""
             text-decoration: none;
             font-weight: bold;
         }
-        .feature-columns {
+        .feature-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
             padding: 2rem;
         }
         .feature-box {
@@ -69,7 +68,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Hero-Sektion
+# Hero-Sektion mit Scroll-Link
 st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
@@ -78,46 +77,25 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Zweispaltige Leistungsübersicht
-st.markdown('<div class="feature-columns">', unsafe_allow_html=True)
+# Leistungsübersicht
+st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
-left_col = '''
-<div class="feature-box">
-    <h4>📊 Paradigmenanalyse</h4>
-    <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
-    <ul>
-        <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-        <li>Adaptionsfähigkeit von Kotters 8-Stufen-Modell</li>
-        <li>Evaluation von Lernprozessen nach Senge in KI-Kontexten</li>
-    </ul>
-</div>
-<div class="feature-box">
-    <h4>🧭 Kulturdiagnostik</h4>
-    <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
-</div>
-<div class="feature-box">
-    <h4>👥 Change-Coaching</h4>
-    <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
-</div>
-'''
+features = [
+    ("📊 Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
+    ("🧭 Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
+    ("👥 Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
+    ("🗣️ KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
+    ("🧠 Systemisches Design", "Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen."),
+    ("🤖 Prototypische Teams", "Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.")
+]
 
-right_col = '''
-<div class="feature-box">
-    <h4>🗣️ KI-Framing Workshops</h4>
-    <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
-</div>
-<div class="feature-box">
-    <h4>🧠 Systemisches Design</h4>
-    <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
-</div>
-<div class="feature-box">
-    <h4>🤖 Prototypische Teams</h4>
-    <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
-</div>
-'''
-
-st.markdown(f"<div>{left_col}</div>", unsafe_allow_html=True)
-st.markdown(f"<div>{right_col}</div>", unsafe_allow_html=True)
+for title, desc in features:
+    st.markdown(f"""
+        <div class="feature-box">
+            <h4>{title}</h4>
+            <p>{desc}</p>
+        </div>
+    """, unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
 
