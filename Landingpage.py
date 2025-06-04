@@ -170,7 +170,7 @@ st.markdown("""
     <li>Systemisches Lernen nach Senge & Automatisierung</li>
   </ul>
 </div>
-</div>
+
     <div class="feature-box">
     <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -178,6 +178,7 @@ st.markdown("""
       <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
     </div>
 </div>
+
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -186,6 +187,9 @@ st.markdown("""
     </div>
   </div>
 </div>
+
+
+
   <div style="flex: 1;">
     <div class="feature-box">
       <div class="centered-image">
