@@ -7,7 +7,7 @@ st.set_page_config(
 
 video_url = "https://raw.githubusercontent.com/Reik98/Landingpage/main/Banner_Video.mp4"
 
-# CSS + Video direkt im Hero-Block
+# CSS mit Video + separatem dunklem Overlay + Text im Vordergrund
 st.markdown(f"""
     <style>
         html {{
@@ -19,12 +19,8 @@ st.markdown(f"""
             height: 450px;
             overflow: hidden;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
-            text-align: center;
-            text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }}
         .hero video {{
             position: absolute;
@@ -34,17 +30,29 @@ st.markdown(f"""
             min-height: 100%;
             object-fit: cover;
             z-index: 0;
-            opacity: 0.25;
+        }}
+        .hero::before {{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* dunkler Overlay */
+            z-index: 1;
         }}
         .hero-content {{
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }}
-        .hero h1 {{
+        .hero-content h1 {{
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
         }}
-        .hero p {{
+        .hero-content p {{
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }}
@@ -92,7 +100,7 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
-# Feature Grid
+# Leistungsbeschreibung
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
