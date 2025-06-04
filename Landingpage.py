@@ -26,7 +26,10 @@ st.markdown("""
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             }
 
-        header img {
+        header img_1 {
+            height: 150px;
+            }
+        header img_2 {
             height: 150px;
             }
         .hero {
@@ -85,7 +88,8 @@ st.markdown("""
 # Logo oben links
 st.markdown("""
 <header>
-    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" alt="Aicura Logo">
+    <img_1 src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" alt="Aicura Logo">
+    <img_2 src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" alt="Aicura Logo">
 </header>
 """, unsafe_allow_html=True)
 
