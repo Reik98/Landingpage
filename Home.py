@@ -146,6 +146,11 @@ st.markdown("""
         <h4 class="centered-heading">KI-Framing Workshops</h4>
       </div>
       <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
+      <ul>
+        <li>Entwicklung von akzeptanzfördernden Narrativen für KI-Einsatz</li>
+        <li>Gestaltung emotionaler Tonalitäten für KI-Kommunikation</li>
+        <li>Wie unterscheidet sich KI-Kommunikation von zwischenmenschlicher Kommunikation?</li>
+      </ul>
     </div>
     <div class="feature-box">
       <div class="centered-image">
@@ -153,6 +158,11 @@ st.markdown("""
         <h4 class="centered-heading">Systemisches Design</h4>
       </div>
       <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
+      <ul>
+        <li>Analyse und Weiterentwicklung bestehender systemischer Logiken</li>
+        <li>Übersetzung systemischer Prinzipien auf lernende Maschinen</li>
+        <li>Design neuer Interaktionsmuster zwischen Mensch und KI im organisationalen Kontext</li>
+      </ul>
     </div>
     <div class="feature-box">
       <div class="centered-image">
@@ -160,6 +170,11 @@ st.markdown("""
         <h4 class="centered-heading">Prototypische Teams</h4>
       </div>
       <p>Begleitung von Pilotteams mit echten KI-Agenten im Arbeitsalltag.</p>
+      <ul>
+        <li>Identifikation geeigneter Pilotbereiche für KI-Integration</li>
+        <li>Begleitung interdisziplinärer Teams mit real eingesetzten KI-Agenten</li>
+        <li>Evaluation von Akzeptanz, Effizienz und kulturellem Impact im Arbeitsalltag</li>
+      </ul>
     </div>
   </div>
 </div>
