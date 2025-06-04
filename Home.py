@@ -128,7 +128,7 @@ st.markdown("""
     </div>
     <div class="feature-box">
       <div class="centered-image">
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/coaching.png" class="Logo-Bereiche">
         <h4 class="centered-heading">Change-Coaching & Impulsformate</h4>
       </div>
       <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
