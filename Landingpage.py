@@ -5,14 +5,14 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS für Bild-Hintergrund im Hero-Bereich
+# CSS mit Overlay + Bild
 st.markdown("""
     <style>
         .hero {
             position: relative;
             width: 100%;
             height: 450px;
-            background-image: url('image.png');
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -20,7 +20,8 @@ st.markdown("""
             justify-content: center;
             align-items: center;
             color: white;
-            text-shadow: 0 0 8px rgba(0,0,0,0.6);
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }
         .hero h1 {
             font-size: 2.8rem;
@@ -63,7 +64,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Hero-Bereich mit Bild
+# Hero mit sichtbarem Hintergrundbild
 st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
@@ -72,7 +73,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Feature Grid
+# Leistungsübersicht
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
@@ -94,7 +95,7 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Kontaktformular
+# Formular
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
     name = st.text_input("Name")
