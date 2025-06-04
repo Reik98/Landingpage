@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 st.set_page_config(
@@ -54,17 +55,12 @@ st.markdown("""
             text-decoration: none;
             font-weight: bold;
         }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            padding: 2rem;
-        }
         .feature-box {
             background-color: #ffffff;
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
         }
         .feature-box h4 {
             margin-top: 0;
@@ -79,14 +75,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Logo oben links (direkt als Bild eingebunden, nicht per CSS-Hintergrund)
+# Logo oben links
 st.markdown("""
 <div class="logo-container">
     <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
 </div>
 """, unsafe_allow_html=True)
 
-# Hero-Sektion mit Scroll-Link
+# Hero-Sektion
 st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
@@ -95,8 +91,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Leistungsübersicht
-# Zwei-Spalten Feature-Layout
+# Zwei-Spalten-Layout der Leistungsangebote
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
@@ -135,17 +130,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-for title, desc in features:
-    st.markdown(f"""
-        <div class="feature-box">
-            <h4>{title}</h4>
-            <p>{desc}</p>
-        </div>
-    """, unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
-
-# Anker für Formular
+# Kontaktformular
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
