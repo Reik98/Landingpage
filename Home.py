@@ -1,9 +1,12 @@
 import streamlit as st
+from shared.header import show_header  # ⬅️ gemeinsamen Header importieren
 
 st.set_page_config(
     page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
     layout="wide"
 )
+
+show_header()  # ⬅️ Header anzeigen
 
 # CSS mit Logo und Layout
 st.markdown("""
