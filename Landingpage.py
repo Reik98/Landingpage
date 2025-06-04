@@ -16,9 +16,19 @@ st.markdown("""
             position: fixed;
             top: 20px;
             left: 20px;
+            width: 100%;
+            height: 60px;
             background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
             url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
-            z-index: 1000;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }
         .logo-container img {
             height: 60px;
