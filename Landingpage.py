@@ -18,7 +18,7 @@ st.markdown("""
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 150px;
+    width: 190px;
     height: 90px;
     background-image: url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
     background-size: contain;
