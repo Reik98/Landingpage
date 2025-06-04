@@ -16,7 +16,7 @@ st.markdown("""
             position: fixed;
             top: 20px;
             left: 20px;
-            width: 100%;
+            width: 10%;
             height: 60px;
             background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
             url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png');
