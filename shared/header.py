@@ -35,7 +35,7 @@ def show_header():
             </div>
             <div class="nav-links">
                 <a href="/">🏠 Home</a>
-                <a href="/Quiz" class="cta-button">📋 Quiz</a>
+                st.page_link("pages/Quiz.py", label="📋 Quiz", icon="🧠")
             </div>
         </div>
     """, unsafe_allow_html=True)
