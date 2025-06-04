@@ -19,6 +19,8 @@ st.markdown("""
 
         .hero {
             position: relative; width: 100%; height: 600px; top: 20px;
+            margin-bottom: 2rem; /* 👈 Abstand zum nächsten Abschnitt */
+            margin-top: 1rem; /* 👈 Abstand zum nächsten Abschnitt */
             background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
             url('https://raw.githubusercontent.com/Reik98/Landingpage/main/image.png');
             background-size: cover; background-position: center;
