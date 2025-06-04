@@ -40,7 +40,6 @@ st.markdown("""
 # Fragen
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
-  <div style="flex: 1;">
     <div class="feature-box">
       questions = {
     "1. Gibt es eine KI-Strategie im Unternehmen?": ["Ja, klar definiert", "Teilweise", "Nein"],
