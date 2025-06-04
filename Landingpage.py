@@ -74,14 +74,22 @@ st.markdown("""
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
-        .cta-button {
-            background-color: #fdbc00;
-            color: #000;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+       .cta-button {
+        background-color: #fdbc00;
+        color: #000;  /* <- sorgt für schwarze Schrift */
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .cta-button:visited,
+    .cta-button:active,
+    .cta-button:hover {
+        color: #000;  /* <- stellt sicher, dass die Farbe auch bei Hover & Klick schwarz bleibt */
+        text-decoration: none;
+    }
         .feature-box {
             background-color: #ffffff;
             padding: 1.5rem;
