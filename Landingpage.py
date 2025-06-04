@@ -30,9 +30,7 @@ st.markdown("""
             text-align: center;
             text-shadow: 0 0 10px rgba(0,0,0,0.6);
         }
-        .logo-container img {
-            height: 60px;
-        }
+       
         .hero {
             position: relative;
             width: 100%;
@@ -90,12 +88,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Logo oben links
-st.markdown("""
-<div class="logo-container">
-    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
-</div>
-""", unsafe_allow_html=True)
 
 # Hero-Sektion mit Scroll-Link
 st.markdown("""
