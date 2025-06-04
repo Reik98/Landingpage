@@ -76,8 +76,11 @@ def show_header():
 
     @media (prefers-color-scheme: dark) {
         header {
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+            background-color: #ffffff !important; /* heller Hintergrund im Darkmode */
+            }
+            .nav-container a {
+            color: #000000 !important; /* Schriftfarbe auf helles Weiß umstellen */
+        }
         }
 
         .logo-main {
