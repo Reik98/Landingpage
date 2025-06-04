@@ -49,7 +49,7 @@ st.markdown("""
             margin-bottom: 1.5rem;
         }
         .feature-box h4 {
-            margin-top: 0;
+            margin-top: 10;
             color: #003865;
         }
     </style>
