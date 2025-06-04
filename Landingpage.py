@@ -27,7 +27,7 @@ st.markdown("""
             }
 
         .logo-main {
-            height: 70px;
+            height: 90px;
             }
 
         .logo-partner {
