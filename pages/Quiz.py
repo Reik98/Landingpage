@@ -39,10 +39,29 @@ questions = {
     "5. Wie gut sind Ihre Datenprozesse auf KI vorbereitet?": ["Sehr gut", "Teilweise", "Schwach"]
 }
 
+st.markdown("""
+    <style>
+        .feature-box {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+        .feature-box h4 {
+            margin-top: 0;
+            color: #003865;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 responses = []
-for q, options in questions.items():
-    choice = st.radio(q, options, key=q)
+for i, (question, options) in enumerate(questions.items(), 1):
+    st.markdown(f'<div class="feature-box"><h4>{i}. {question}</h4>', unsafe_allow_html=True)
+    choice = st.radio("", options, key=f"q{i}")
     responses.append(choice)
+    st.markdown('</div>', unsafe_allow_html=True)
+
 
 # Ergebnis berechnen
 if st.button("Ergebnis auswerten"):
