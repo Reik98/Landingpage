@@ -14,10 +14,10 @@ st.markdown("""
         }
         header {
             position: fixed;
-            top: 50px;
+            top: 0px;
             left: 0;
             width: 100%;
-            height: 180px;
+            height: 150px;
             background-color: white;
             z-index: 999;
             display: flex;
