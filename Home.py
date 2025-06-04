@@ -52,7 +52,7 @@ st.markdown("""
         }
 
         cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
-        background-color: #FFFFFF;
+        background-color: #008B92;
         color: #FFFFFF;
         text-decoration: none;
         }
