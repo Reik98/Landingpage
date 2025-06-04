@@ -16,8 +16,16 @@ def show_header():
             padding: 0 20px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        .logo-main { height: 90px; margin-right: 1rem; }
-        .logo-partner { height: 45px; margin-right: 2rem; }
+
+        .logo-main {
+            height: 90px;
+            margin-right: 1rem;
+        }
+
+        .logo-partner {
+            height: 45px;
+            margin-right: 2rem;
+        }
 
         .nav-container {
             display: flex;
@@ -25,18 +33,67 @@ def show_header():
             margin-left: auto;
             font-weight: bold;
         }
+
         .nav-container a {
             color: #003865;
             text-decoration: none;
             font-size: 1.1rem;
         }
+
         .nav-container a:hover {
             text-decoration: underline;
+        }
+
+        /* 🔹 Mobile Optimierung */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                align-items: flex-start;
+            }
+
+            .logo-main {
+                height: 60px;
+                margin-bottom: 0.5rem;
+            }
+
+            .logo-partner {
+                height: 30px;
+                margin-bottom: 1rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .nav-container a {
+                font-size: 1rem;
+            }
+        }
+
+        /* 🔹 Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            header {
+                background-color: #1e1e1e;
+                box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+            }
+
+            .nav-container a {
+                color: #ffffff;
+            }
+
+            .nav-container a:hover {
+                color: #00c6d2;
+                text-decoration: underline;
+            }
         }
         </style>
     """, unsafe_allow_html=True)
 
-    # HTML-Struktur für Header und Navigation
     st.markdown("""
         <header>
             <a href="/">
@@ -49,5 +106,3 @@ def show_header():
             </div>
         </header>
     """, unsafe_allow_html=True)
-
-
