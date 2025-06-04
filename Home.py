@@ -83,9 +83,7 @@ st.markdown("""
             margin-top: 3rem; text-align: center;
             font-size: 0.9rem; color: #888;
         }
-    </style>
 
-    <style>
 /* Responsive mobile optimizations */
 @media (max-width: 768px) {
     .hero {
