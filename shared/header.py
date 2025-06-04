@@ -2,13 +2,13 @@ import streamlit as st
 
 def show_header():
     st.markdown("""
-       <style>
+    <style>
     header {
         position: fixed;
         top: 3.0rem;
         left: 0;
         width: 100%;
-        height: 110px;  /* feste Höhe */
+        height: 110px;
         background-color: white;
         z-index: 999;
         display: flex;
@@ -36,7 +36,7 @@ def show_header():
     }
 
     .nav-container a {
-        color: #000000;
+        color: #000000;  /* schwarz im Light Mode */
         text-decoration: none;
         font-size: 1.1rem;
     }
@@ -46,61 +46,56 @@ def show_header():
     }
 
     body {
-        padding-top: calc(3.0rem + 110px);  /* ➕ Platz für Header */
+        padding-top: calc(3.0rem + 110px);
     }
 
     @media (max-width: 768px) {
         header {
-                flex-direction: column;
-                height: auto;
-                padding: 1rem;
-                align-items: flex-start;
+            flex-direction: column;
+            height: auto;
+            padding: 1rem;
+            align-items: flex-start;
         }
 
         .logo-main { height: 50px; margin-bottom: 0.5rem; }
         .logo-partner { height: 28px; margin-bottom: 0.5rem; }
 
         .nav-container {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-                margin-top: 0.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
         }
 
         .nav-container a { font-size: 1rem; }
 
         body {
-            padding-top: calc(3.0rem + 140px);  /* ⬆️ erhöht für Mobilheader */
+            padding-top: calc(3.0rem + 140px);
         }
     }
 
     @media (prefers-color-scheme: dark) {
         header {
-            background-color: #ffffff !important; /* heller Hintergrund im Darkmode */
-            }
-            .nav-container a {
-            color: #ffffff !important; /* Schriftfarbe auf helles Weiß umstellen */
+            background-color: #ffffff !important;
         }
+
+        .nav-container a {
+            color: #ffffff !important;
+        }
+
+        .nav-container a:hover {
+            color: #00c6d2 !important;
         }
 
         .logo-main {
             filter: brightness(200%) contrast(120%);
         }
 
-        .nav-container a {
-            color: #ffffff;
-        }
-
-        .nav-container a:hover {
-            color: #00c6d2;
-        }
-
         body {
             background-color: #1e1e1e;
         }
     }
-</style>
-
+    </style>
     """, unsafe_allow_html=True)
 
     st.markdown("""
