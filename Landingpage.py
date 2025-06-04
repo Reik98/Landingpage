@@ -45,7 +45,7 @@ st.markdown("""
         }
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);  /* zwei Spalten */
             gap: 1.5rem;
             padding: 2rem;
         }
