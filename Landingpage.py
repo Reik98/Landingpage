@@ -144,6 +144,7 @@ st.markdown("""
   <div style="flex: 1;">
     <div class="feature-box">
       <br>📊</br>
+      <hr>
       <h4>Paradigmenanalyse</h4>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
