@@ -185,7 +185,6 @@ st.markdown("""
       <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
     </div>
   </div>
-
   <div style="flex: 1;">
     <div class="feature-box">
       <div class="centered-image">
@@ -201,7 +200,6 @@ st.markdown("""
       </div>
       <p>Neuausrichtung systemischer Ansätze im Zusammenspiel mit lernenden Maschinen.</p>
     </div>
-
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -212,8 +210,6 @@ st.markdown("""
   </div>
 </div>
 """, unsafe_allow_html=True)
-
-
 
 
 # Kontaktformular
