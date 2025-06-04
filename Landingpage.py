@@ -1,33 +1,32 @@
 import streamlit as st
 
-st.set_page_config(page_title="Kulturwandel durch KI – Ihre Organisationsberatung", layout="wide")
+st.set_page_config(
+    page_title="Kulturwandel durch KI – Ihre Organisationsberatung",
+    layout="wide"
+)
 
-# Custom CSS für Layout und Design
+# Banner Video im Hintergrund
 st.markdown("""
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #222;
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.2;
         }
-        .headline {
-            font-size: 2.5rem;
-            font-weight: bold;
+        .hero-text {
+            position: relative;
             text-align: center;
-            padding-top: 2rem;
-        }
-        .subheadline {
-            text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            z-index: 2;
+            color: #000;
         }
         .cta-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
-        .cta-button a {
             background-color: #fdbc00;
             color: #000;
             padding: 1rem 2rem;
@@ -58,18 +57,26 @@ st.markdown("""
             color: #888;
         }
     </style>
+
+    <video autoplay loop muted playsinline class="video-background">
+        <source src="Banner_Video.mp4" type="video/mp4">
+    </video>
 """, unsafe_allow_html=True)
 
-# Hero Section
-st.markdown('<div class="headline">Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</div>', unsafe_allow_html=True)
-st.markdown('<div class="subheadline">Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</div>', unsafe_allow_html=True)
-st.markdown('<div class="cta-button"><a href="#form">Kostenfreies Erstgespräch buchen</a></div>', unsafe_allow_html=True)
+# Hero-Sektion mit überlagertem Text
+st.markdown("""
+<div class="hero-text">
+    <h1 style="font-size: 2.8rem;">Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
+    <p style="font-size: 1.2rem;">Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
+    <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+</div>
+""", unsafe_allow_html=True)
 
 # Feature Grid
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
-    ("🔍 Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
+    ("Paradigmenanalyse", "Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit."),
     ("Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
     ("Change-Coaching", "Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur."),
     ("KI-Framing Workshops", "Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign."),
@@ -87,7 +94,7 @@ for title, desc in features:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Kontaktformular (Leadgenerierung)
+# Formular
 st.markdown("### Buchen Sie Ihr Erstgespräch")
 with st.form("form", clear_on_submit=True):
     name = st.text_input("Name")
