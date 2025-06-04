@@ -17,7 +17,7 @@ st.markdown("""
             top: 60px;
             left: 0;
             width: 100%;
-            height: 150px;
+            height: 250px;
             background-color: white;
             z-index: 999;
             display: flex;
