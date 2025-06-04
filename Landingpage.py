@@ -156,8 +156,9 @@ st.markdown("""
     <div class="feature-box">
   <div class="centered-image">
     <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
-  </div>
+  <div class="centered-image">
   <h4>Paradigmenanalyse</h4>
+  </div>
       <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
       <ul>
         <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
