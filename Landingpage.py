@@ -111,7 +111,7 @@ st.markdown("""
     }
         .feature-box {
             background-color: #ffffff;
-            height: 200px;
+            height: 400px;
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
