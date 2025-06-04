@@ -140,9 +140,9 @@ st.markdown("""
     .centered-heading {
         color: #008B92 !important;
     }
-    .divider {
+    .divider span {
         color: #ffffff !important;
-        }
+    }
     .cta-button {
         background-color: #008B92 !important;
         color: #ffffff !important;
