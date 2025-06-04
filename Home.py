@@ -127,6 +127,29 @@ st.markdown("""
         font-size: 1.2rem;
     }
 }
+/* 🔹 Darkmode-Unterstützung */
+@media (prefers-color-scheme: dark) {
+    body, .hero, .catchfrase, .feature-box {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+    }
+    .feature-box h4,
+    .catchfrase h3,
+    .centered-heading {
+        color: #fddb3a !important;
+    }
+    .cta-button {
+        background-color: #fddb3a !important;
+        color: #000000 !important;
+    }
+    .cta-button:hover {
+        background-color: #ffe866 !important;
+        color: #000 !important;
+    }
+    footer {
+        color: #ccc;
+    }
+}
 </style>
 
 """, unsafe_allow_html=True)
