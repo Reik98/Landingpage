@@ -51,9 +51,10 @@ st.markdown("""
             text-decoration: none; /* kein Unterstrich standardmäßig */
             }
             
-        .cta-button:hover {
-            text-decoration: underline; /* Unterstrich beim Hover */
-            color: #FFFFFF; /* Textfarbe beibehalten */
+        .cta-button, .cta-button:visited, .cta-button:hover, .cta-button:active {
+            background-color: #008B92;
+            color: #FFFFFF;
+            text-decoration: none;
             }
 
 
