@@ -36,7 +36,7 @@ def show_header():
     }
 
     .nav-container a {
-        color: #000000;  /* schwarz im Light Mode */
+        color: #000000 !important;
         text-decoration: none;
         font-size: 1.1rem;
     }
@@ -67,7 +67,9 @@ def show_header():
             margin-top: 0.5rem;
         }
 
-        .nav-container a { font-size: 1rem; }
+        .nav-container a {
+            font-size: 1rem;
+        }
 
         body {
             padding-top: calc(3.0rem + 140px);
@@ -84,7 +86,8 @@ def show_header():
         }
 
         .nav-container a:hover {
-            color: #00c6d2 !important;
+            color: #000000 !important;
+            text-decoration: underline;
         }
 
         .logo-main {
