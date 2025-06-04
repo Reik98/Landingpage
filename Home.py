@@ -43,7 +43,7 @@ st.markdown("""
 
         .cta-button {
             background-color: #008B92; /* neue Farbe */
-            color: #fff;
+            color: #FFDE00;
             padding: 1rem 2rem;
             border-radius: 8px;
             text-decoration: none;
