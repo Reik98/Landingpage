@@ -35,7 +35,7 @@ def show_header():
             </div>
             <div class="nav-links">
                 <a href="/">🏠 Home</a>
-                <a href="/Quiz">📋 Quiz</a>
+                <a href="/Quiz" class="cta-button">📋 Quiz</a>
             </div>
         </div>
     """, unsafe_allow_html=True)
