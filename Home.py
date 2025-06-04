@@ -87,7 +87,8 @@ st.markdown("""
 st.markdown("""
 <div class="catchfrase">
     <h3>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen:</h3>
-    <p>Stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</p>
+    <p>Stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln:</p>
+    <p>Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</p>
 </div>
 """, unsafe_allow_html=True)
 
