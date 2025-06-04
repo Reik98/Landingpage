@@ -39,7 +39,9 @@ def show_header():
     # HTML-Struktur für Header und Navigation
     st.markdown("""
         <header>
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
+            <a href="/Home">
+                <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
+            </a>
             <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
             <div class="nav-container">
                 <a href="/">🏠 Home</a>
