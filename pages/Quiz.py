@@ -38,6 +38,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Fragen
+st.markdown("""
+<div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
+  <div style="flex: 1;">
+    <div class="feature-box">
 questions = {
     "1. Gibt es eine KI-Strategie im Unternehmen?": ["Ja, klar definiert", "Teilweise", "Nein"],
     "2. Wie hoch ist das Vertrauen der Mitarbeitenden in KI-Systeme?": ["Hoch", "Mittel", "Gering"],
@@ -45,6 +49,7 @@ questions = {
     "4. Gibt es Weiterbildungsangebote zu KI?": ["Regelmäßig", "Geplant", "Keine"],
     "5. Wie gut sind Ihre Datenprozesse auf KI vorbereitet?": ["Sehr gut", "Teilweise", "Schwach"]
 }
+
 
 responses = []
 for q, options in questions.items():
