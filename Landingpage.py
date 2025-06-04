@@ -155,6 +155,41 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Trennlinie
+st.markdown("""
+<style>
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #fddb3a; /* Gelblich wie im Screenshot */
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+.divider span {
+  color: #444;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+</style>
+
+<div class="divider"><span>Unsere Leistungsangebote</span></div>
+""", unsafe_allow_html=True)
+
+
 # Zwei-Spalten-Layout der Leistungsangebote
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
