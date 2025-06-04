@@ -51,20 +51,20 @@ def show_header():
 
     @media (max-width: 768px) {
         header {
-            flex-direction: column;
-            align-items: flex-start;
-            height: 140px;  /* ➕ höher auf Mobil */
-            padding: 1rem;
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                align-items: flex-start;
         }
 
         .logo-main { height: 50px; margin-bottom: 0.5rem; }
         .logo-partner { height: 28px; margin-bottom: 0.5rem; }
 
         .nav-container {
-            flex-direction: column;
-            gap: 0.5rem;
-            width: 100%;
-            margin-left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
         }
 
         .nav-container a { font-size: 1rem; }
