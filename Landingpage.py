@@ -88,6 +88,13 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Logo oben links
+st.markdown("""
+<div class="logo-container">
+    <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo.png" alt="Aicura Logo">
+</div>
+""", unsafe_allow_html=True)
+
 
 # Hero-Sektion mit Scroll-Link
 st.markdown("""
