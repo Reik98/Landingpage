@@ -101,8 +101,8 @@ st.markdown("""
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
     <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
     <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
-    <ul>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: 
-    stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</ul>
+    <ul>In vielen Organisationen basieren Kultur- und Change-Modelle auf klassischen Paradigmen: </ul>
+    <ul>stabile Systeme, lineares Denken, Planbarkeit. Doch KI verändert die Spielregeln: Entscheidungen werden datenbasiert, Rollen verschwimmen, Führung wird adaptiv. Viele der bisher genutzten Modelle (z. B. Senge, Kotter) brauchen ein radikales Update.</ul>
 </div>
 """, unsafe_allow_html=True)
 
