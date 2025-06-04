@@ -176,7 +176,7 @@ st.markdown("""
         <h4 class="centered-heading">Kulturdiagnostik</h4>
       </div>
       <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
-
+    </div>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
