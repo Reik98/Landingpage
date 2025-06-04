@@ -14,7 +14,7 @@ st.markdown("""
         }
         header {
             position: fixed;
-            top: 0px;
+            top: 80px;
             left: 0;
             width: 100%;
             height: 150px;
