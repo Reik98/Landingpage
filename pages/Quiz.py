@@ -42,6 +42,7 @@ questions = {
 st.markdown("""
     <style>
         .feature-box {
+            position: relative; width: 100%; height: 100px; top: 20px;
             background-color: #ffffff;
             padding: 1.5rem;
             border-radius: 12px;
