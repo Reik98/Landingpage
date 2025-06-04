@@ -12,15 +12,19 @@ show_header()  # Header anzeigen
 # Optional: Intro-Abschnitt
 st.markdown("""
 <style>
-    .quiz-intro {
-        margin-top: 140px;
-        padding: 2rem;
-        background-color: #f5f7fa;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+ .quiz-intro {
+        position: relative; width: 100%; height: 600px; top: 20px;
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://raw.githubusercontent.com/Reik98/Landingpage/main/image.png');
+        background-size: cover; background-position: center;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        color: white; text-align: center;
+        text-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+        
 </style>
-
+   
 <div class="quiz-intro">
     <h2>📋 Ist Ihre Organisation KI-fähig?</h2>
     <p>Beantworten Sie 5 kurze Fragen und erhalten Sie direkt eine Einschätzung zur kulturellen und organisatorischen KI-Reife.</p>
