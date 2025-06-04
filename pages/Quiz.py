@@ -25,7 +25,7 @@ st.markdown("""
 </style>
    
 <div class="quiz-intro">
-    <h2>📋 Ist Ihre Organisation KI-fähig?</h2>
+    <h2>Ist Ihre Organisation KI-fähig?</h2>
     <p>Beantworten Sie 5 kurze Fragen und erhalten Sie direkt eine Einschätzung zur kulturellen und organisatorischen KI-Reife.</p>
 </div>
 """, unsafe_allow_html=True)
