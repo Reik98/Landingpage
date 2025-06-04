@@ -42,10 +42,15 @@ st.markdown("""
         .catchfrase p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 
         .cta-button {
-            background-color: #fdbc00; color: #000;
-            padding: 1rem 2rem; border-radius: 8px;
-            text-decoration: none; font-weight: bold; display: inline-block;
+            background-color: #008B92; /* neue Farbe */
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
         }
+
         .cta-button:hover { color: #000; text-decoration: none; }
 
         .feature-box {
