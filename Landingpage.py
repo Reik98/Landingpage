@@ -42,13 +42,13 @@ st.markdown("""
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-        }
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);  /* zwei Spalten */
             gap: 1.5rem;
             padding: 2rem;
         }
+
         .feature-box {
             background-color: #ffffff;
             padding: 1.5rem;
@@ -78,6 +78,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Leistungsübersicht
+# CSS ist schon gesetzt für zwei Spalten
 st.markdown('<div class="feature-grid">', unsafe_allow_html=True)
 
 features = [
@@ -85,8 +86,8 @@ features = [
         Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.
         <ul>
           <li>Luhmanns Systemtheorie im Abgleich mit KI-Dynamiken</li>
-          <li>Adaptionsfähigkeit von Kotters 8-Stufen-Modell</li>
-          <li>Evaluation von Lernprozessen nach Senge in KI-Kontexten</li>
+          <li>Kotters 8-Stufen-Modell in der KI-Adaption</li>
+          <li>Systemisches Lernen nach Senge & Automatisierung</li>
         </ul>
     """),
     ("🧭 Kulturdiagnostik", "Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI."),
@@ -105,6 +106,7 @@ for title, desc in features:
     """, unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
+
 
 # Anker für Formular
 st.markdown('<div id="form"></div>', unsafe_allow_html=True)
