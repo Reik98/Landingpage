@@ -342,7 +342,7 @@ testimonials = [
     }
 ]
 
-# Session state verwalten
+# Session-Verwaltung
 if "testimonial_index" not in st.session_state:
     st.session_state.testimonial_index = 0
 if "last_switch_time" not in st.session_state:
@@ -353,34 +353,84 @@ if time.time() - st.session_state.last_switch_time > 6:
     st.session_state.testimonial_index = (st.session_state.testimonial_index + 1) % len(testimonials)
     st.session_state.last_switch_time = time.time()
 
-# Spaltenaufteilung mit Pfeilen
-col1, col2, col3 = st.columns([1, 6, 1])
-with col1:
-    if st.button("←", key="prev"):
+# Pfeile und Kasten
+st.markdown("""
+    <style>
+    .testimonial-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .arrow {
+        font-size: 2rem;
+        font-weight: bold;
+        background: none;
+        border: none;
+        color: #008B92;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+    .testimonial-box {
+        flex: 0 1 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        min-height: 200px;
+    }
+    .testimonial-text {
+        flex: 1;
+        font-size: 1.1rem;
+        color: #333;
+        margin-right: 2rem;
+    }
+    .testimonial-logo {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid #eee;
+    }
+    .testimonial-logo img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# HTML-Struktur mit Callbacks
+left, center, right = st.columns([1, 8, 1])
+
+with left:
+    if st.button("←", key="prev_arrow"):
         st.session_state.testimonial_index = (st.session_state.testimonial_index - 1) % len(testimonials)
         st.session_state.last_switch_time = time.time()
-with col3:
-    if st.button("→", key="next"):
-        st.session_state.testimonial_index = (st.session_state.testimonial_index + 1) % len(testimonials)
-        st.session_state.last_switch_time = time.time()
 
-# Anzeige
-with col2:
+with center:
     st.markdown(f"""
-    <div style="display: flex; align-items: center; justify-content: space-between;
-                background-color: #f9f9f9; padding: 2rem; border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 200px;">
-        <div style="flex: 1; font-size: 1.2rem; color: #333; margin-right: 2rem;">
-            {testimonials[st.session_state.testimonial_index]['text']}
-        </div>
-        <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%;
-                    overflow: hidden; border: 2px solid #eee;">
-            <img src="{testimonials[st.session_state.testimonial_index]['logo']}"
-                 style="width: 100%; height: auto; object-fit: contain;">
+    <div class="testimonial-wrapper">
+        <div class="testimonial-box">
+            <div class="testimonial-text">
+                {testimonials[st.session_state.testimonial_index]["text"]}
+            </div>
+            <div class="testimonial-logo">
+                <img src="{testimonials[st.session_state.testimonial_index]["logo"]}" />
+            </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
+with right:
+    if st.button("→", key="next_arrow"):
+        st.session_state.testimonial_index = (st.session_state.testimonial_index + 1) % len(testimonials)
+        st.session_state.last_switch_time = time.time()
 
 
 # --- Footer ---
