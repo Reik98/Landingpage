@@ -62,11 +62,25 @@ st.markdown("""
 
 
         .feature-box {
-            background-color: #ffffff; height: 400px;
-            padding: 1.5rem; border-radius: 12px;
+            background-color: #ffffff;
+            height: 400px;
+            padding: 1.5rem;
+            border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             margin-bottom: 1.5rem;
-        }
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            background-color: #f5f5f5;
+            text-decoration: none;
+            }
         .feature-box h4 { margin-top: 0; color: #003865; }
 
         .divider {
@@ -186,6 +200,7 @@ st.markdown('<div class="divider"><span>Unsere Leistungsangebote</span></div>', 
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
+    <a href="/Paradigmenanalyse" style="text-decoration: none;">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -198,6 +213,7 @@ st.markdown("""
         <li>Team-Workshop zur kollektiven Reflexion</li>
       </ul>
     </div>
+    </a>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/culture.png" class="Logo-Bereiche">
