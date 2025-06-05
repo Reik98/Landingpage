@@ -85,6 +85,16 @@ st.markdown("""
             text-decoration: none;
             display: block;
             }
+        a.feature-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            }
+        a.feature-link:visited, a.feature-link:focus, a.feature-link:active, a.feature-link:hover {
+            text-decoration: none;
+            color: inherit;
+            }
+            
         .feature-box h4 { margin-top: 0; color: #003865; }
 
         .divider {
@@ -204,7 +214,7 @@ st.markdown('<div class="divider"><span>Unsere Leistungsangebote</span></div>', 
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
-    <a href="/Leistungen/Paradigmenanalyse" text-decoration: none;>
+    <a href="/Leistungen/Paradigmenanalyse" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -218,7 +228,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
-    <a href="/Leistungen/Kulturdiagnostik & Integrationsstrategie" text-decoration: none;>
+    <a href="/Leistungen/Kulturdiagnostik & Integrationsstrategie" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/culture.png" class="Logo-Bereiche">
