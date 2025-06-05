@@ -118,7 +118,7 @@ def show_header():
                 <a href="/">Home</a>
                 <a href="/Quiz">Quiz</a>
                 <a href="/Events">Events</a>
-                <a href="/Über uns">Über uns</a>
+                <a href="/Über_uns">Über_uns</a>
             </div>
         </header>
     """, unsafe_allow_html=True)
