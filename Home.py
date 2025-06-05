@@ -228,7 +228,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
-    <a href="/Leistungen/Kulturdiagnostik & Integrationsstrategie" class="feature-link">
+    <a href="/Kulturdiagnostik & Integrationsstrategie" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/culture.png" class="Logo-Bereiche">
