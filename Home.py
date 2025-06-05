@@ -79,6 +79,7 @@ st.markdown("""
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
             background-color: #f5f5f5;
+            color: inherit;
             text-decoration: none;
             }
         .feature-box h4 { margin-top: 0; color: #003865; }
