@@ -68,7 +68,7 @@ st.markdown("""
 </style>
 
 <div class="events-hero">
-    <h1>📅 Events & Vorträge</h1>
+    <h1>Events & Vorträge</h1>
     <p>Inspirationen für Ihre Transformation – live, praxisnah und systemisch gedacht</p>
 </div>
 """, unsafe_allow_html=True)
