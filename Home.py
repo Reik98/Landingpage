@@ -325,15 +325,13 @@ with st.form("form", clear_on_submit=True):
     if submitted:
         st.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.")
 
-# --- Automatischer Kundenstimmen-Slider ---
 st.markdown("""
 <style>
-.testimonial-container {
+.testimonial-wrapper {
     position: relative;
     width: 100%;
     max-width: 1000px;
     margin: 3rem auto;
-    overflow: hidden;
 }
 .testimonial-box {
     display: flex;
@@ -344,18 +342,18 @@ st.markdown("""
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     min-height: 200px;
-    animation: fade 0.5s ease-in-out;
+    animation: fade 0.4s ease-in-out;
 }
 .testimonial-text {
     flex: 1;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #333;
     margin-right: 2rem;
 }
 .testimonial-logo {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #eee;
@@ -365,13 +363,30 @@ st.markdown("""
     height: auto;
     object-fit: contain;
 }
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #008B92;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+}
+.arrow-left {
+    left: -2rem;
+}
+.arrow-right {
+    right: -2rem;
+}
 @keyframes fade {
-    from { opacity: 0; }
+    from { opacity: 0.2; }
     to { opacity: 1; }
 }
 </style>
 
-<div class="testimonial-container">
+<div class="testimonial-wrapper">
+  <button class="arrow-btn arrow-left" onclick="prevTestimonial()">&#8592;</button>
   <div class="testimonial-box" id="testimonial">
     <div class="testimonial-text" id="quote">
       „Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“
@@ -381,6 +396,7 @@ st.markdown("""
       <img id="logo" src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png">
     </div>
   </div>
+  <button class="arrow-btn arrow-right" onclick="nextTestimonial()">&#8594;</button>
 </div>
 
 <script>
@@ -400,15 +416,22 @@ const quotes = [
 ];
 
 let i = 0;
-setInterval(() => {
-  const quote = document.getElementById("quote");
-  const logo = document.getElementById("logo");
-  quote.innerHTML = quotes[i].text;
-  logo.src = quotes[i].logo;
-  i = (i + 1) % quotes.length;
-}, 5000);
+function updateTestimonial() {
+    document.getElementById("quote").innerHTML = quotes[i].text;
+    document.getElementById("logo").src = quotes[i].logo;
+}
+function nextTestimonial() {
+    i = (i + 1) % quotes.length;
+    updateTestimonial();
+}
+function prevTestimonial() {
+    i = (i - 1 + quotes.length) % quotes.length;
+    updateTestimonial();
+}
+setInterval(nextTestimonial, 6000);
 </script>
 """, unsafe_allow_html=True)
+
 
 
 # --- Footer ---
