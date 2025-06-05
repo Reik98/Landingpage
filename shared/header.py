@@ -117,6 +117,7 @@ def show_header():
             <div class="nav-container">
                 <a href="/">Home</a>
                 <a href="/Quiz">Quiz</a>
+                <a href="/Events">Events</a>
             </div>
         </header>
     """, unsafe_allow_html=True)
