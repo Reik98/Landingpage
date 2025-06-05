@@ -326,16 +326,31 @@ with st.form("form", clear_on_submit=True):
     if submitted:
         st.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.")
 
-# --- Automatischer Kundenstimmen-Slider ---
+# Kundenstimmen (Slider)
+testimonials = [
+    {
+        "company": "LOGIXON",
+        "image": "Logixon.png",
+        "text": "„Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“",
+        "author": "— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende"
+    },
+    {
+        "company": "Energiewerte",
+        "image": "Energiewerte.png",
+        "text": "„Mit KI-Framing verstehen wir jetzt besser, wie wir Akzeptanz für intelligente Systeme kommunizieren müssen. Vieles nutzen wir auch in der Kommunikation außerhalb der KI!“",
+        "author": "— Leitung Kommunikation, Energieversorger, 1100 Mitarbeitende"
+    },
+    {
+        "company": "TechNova",
+        "image": "Technova.png",
+        "text": "„Wir haben echte Veränderungsbereitschaft entfacht und gleichzeitig bewusst Ängste thematisiert. In kurzer Zeit konnten wir so einen konstruktiven Perspektivenwechsel ermöglichen.“",
+        "author": "— Projektleiter, Tech-Unternehmen, 120 Mitarbeitende"
+    }
+]
+
+# CSS-Styling für das Testimonial-Feld
 st.markdown("""
 <style>
-.testimonial-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: 3rem auto;
-    overflow: hidden;
-}
 .testimonial-box {
     display: flex;
     align-items: center;
@@ -344,8 +359,7 @@ st.markdown("""
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    min-height: 200px;
-    animation: fade 0.5s ease-in-out;
+    margin-bottom: 2rem;
 }
 .testimonial-text {
     flex: 1;
@@ -366,50 +380,26 @@ st.markdown("""
     height: auto;
     object-fit: contain;
 }
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 </style>
+""", unsafe_allow_html=True)
 
-<div class="testimonial-container">
-  <div class="testimonial-box" id="testimonial">
-    <div class="testimonial-text" id="quote">
-      „Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“
-      <br><br><strong>— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende</strong>
+# Auswahl über Slider
+selected_index = st.slider("Kundenstimmen durchblättern", 0, len(testimonials) - 1, 0)
+
+# Aktuelles Testimonial anzeigen
+t = testimonials[selected_index]
+st.markdown(f"""
+<div class="testimonial-box">
+    <div class="testimonial-text">
+        <p>{t['text']}</p>
+        <p style="margin-top: 1rem; font-weight: bold;">{t['author']}</p>
     </div>
     <div class="testimonial-logo">
-      <img id="logo" src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png">
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/{t['image']}" alt="{t['company']} Logo" />
     </div>
-  </div>
 </div>
-
-<script>
-const quotes = [
-  {
-    text: "„Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“<br><br><strong>— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende</strong>",
-    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png"
-  },
-  {
-    text: "„Mit KI-Framing verstehen wir jetzt besser, wie wir Akzeptanz für intelligente Systeme kommunizieren müssen. Vieles nutzen wir auch in der Kommunikation außerhalb der KI!“<br><br><strong>— Leitung Kommunikation, Energieversorger, 1100 Mitarbeitende</strong>",
-    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Energiewerte.png"
-  },
-  {
-    text: "„Wir haben echte Veränderungsbereitschaft entfacht und gleichzeitig bewusst Ängste thematisiert. In kurzer Zeit konnten wir so einen konstruktiven Perspektivenwechsel ermöglichen.“<br><br><strong>— Projektleiter, Tech-Unternehmen, 120 Mitarbeitende</strong>",
-    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Technova.png"
-  }
-];
-
-let i = 0;
-setInterval(() => {
-  const quote = document.getElementById("quote");
-  const logo = document.getElementById("logo");
-  quote.innerHTML = quotes[i].text;
-  logo.src = quotes[i].logo;
-  i = (i + 1) % quotes.length;
-}, 5000);
-</script>
 """, unsafe_allow_html=True)
+
 
 
 
