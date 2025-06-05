@@ -17,7 +17,7 @@ st.markdown("""
     width: 100%;
     height: 500px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/UeberUns_Hero.png');
+    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Über uns.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
