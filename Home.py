@@ -33,7 +33,7 @@ st.markdown("""
         .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 
         .catchfrase {
-            background-color: #ffffff; width: 100%; height: 350px;
+            background-color: #ffffff; width: 100%; height: auto;
             margin-top: 20px; padding: 1.5rem;
             text-align: center;
             border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
