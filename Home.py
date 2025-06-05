@@ -80,7 +80,11 @@ st.markdown("""
             color: inherit;
             text-decoration: none;
             }
-        
+        .feature-box a,.feature-box a:visited, .feature-box a:active, .feature-box a:focus, .feature-box a:hover {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            }
         .feature-box h4 { margin-top: 0; color: #003865; }
 
         .divider {
