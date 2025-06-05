@@ -56,7 +56,7 @@ st.markdown("""
 st.markdown("""
 ### 🎓 Entstehung aus dem Campus
 
-Aicura wurde 2025 von neun Studierenden gegründet – heraus aus einem interdisziplinären Semesterprojekt zur Frage: *Wie muss Organisationskultur gestaltet sein, damit KI wirkt und nicht abschreckt?*.
+Aicura wurde 2025 von neun Studierenden gegründet – heraus aus einem interdisziplinären Semesterprojekt zur Frage: *Wie können KI-Agenten als vollwertige Partizipanten in Unternehmen integriert werden?*.
 
 Was als Experiment begann, wurde zum Impuls für ein wachsendes Netzwerk. Unser Ziel: Wir wollen mit Organisationen Wege finden, KI nicht nur technisch, sondern auch kulturell verantwortungsvoll zu integrieren.
 """)
