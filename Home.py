@@ -242,6 +242,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
+    <a href="/Change-Coaching & Impulsformate" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/coaching.png" class="Logo-Bereiche">
@@ -254,8 +255,10 @@ st.markdown("""
         <li>„Framing & Narrative für KI-Kommunikation“ – Kommunikationsstrategie</li>
       </ul>
     </div>
+    </a>
   </div>
   <div style="flex: 1;">
+    <a href="/KI-Framing Workshops" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/meeting.png" class="Logo-Bereiche">
@@ -268,6 +271,8 @@ st.markdown("""
         <li>Wie unterscheidet sich KI-Kommunikation von zwischenmenschlicher Kommunikation?</li>
       </ul>
     </div>
+    </a>
+    <a href="/Systemisches Design" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/systemic.png" class="Logo-Bereiche">
@@ -280,6 +285,8 @@ st.markdown("""
         <li>Design neuer Interaktionsmuster zwischen Mensch und KI im organisationalen Kontext</li>
       </ul>
     </div>
+    </a>
+    <a href="/Prototypische Teams" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/prototyp.png" class="Logo-Bereiche">
@@ -292,6 +299,7 @@ st.markdown("""
         <li>Evaluation von Akzeptanz, Effizienz und kulturellem Impact im Arbeitsalltag</li>
       </ul>
     </div>
+    </a>
   </div>
 </div>
 """, unsafe_allow_html=True)
