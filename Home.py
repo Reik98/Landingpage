@@ -326,6 +326,9 @@ with st.form("form", clear_on_submit=True):
     if submitted:
         st.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.")
 
+# --- Divider ---
+st.markdown('<div class="divider"><span>Was unsere Kunden sagen</span></div>', unsafe_allow_html=True)
+
 # Kundenstimmen (Slider)
 # Testimonials
 testimonials = [
