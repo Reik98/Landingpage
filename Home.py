@@ -326,60 +326,91 @@ with st.form("form", clear_on_submit=True):
     if submitted:
         st.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.")
 
-# Testimonials
-testimonials = [
-    {
-        "text": "„Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“\n\n**— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende**",
-        "logo": "https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png"
-    },
-    {
-        "text": "„Mit KI-Framing verstehen wir jetzt besser, wie wir Akzeptanz für intelligente Systeme kommunizieren müssen. Vieles nutzen wir auch in der Kommunikation außerhalb der KI!“\n\n**— Leitung Kommunikation, Energieversorger, 1100 Mitarbeitende**",
-        "logo": "https://raw.githubusercontent.com/Reik98/Landingpage/main/Energiewerte.png"
-    },
-    {
-        "text": "„Wir haben echte Veränderungsbereitschaft entfacht und gleichzeitig bewusst Ängste thematisiert. In kurzer Zeit konnten wir so einen konstruktiven Perspektivenwechsel ermöglichen.“\n\n**— Projektleiter, Tech-Unternehmen, 120 Mitarbeitende**",
-        "logo": "https://raw.githubusercontent.com/Reik98/Landingpage/main/Technova.png"
-    }
-]
+# --- Automatischer Kundenstimmen-Slider ---
+st.markdown("""
+<style>
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+.testimonial-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    min-height: 200px;
+    animation: fade 0.5s ease-in-out;
+}
+.testimonial-text {
+    flex: 1;
+    font-size: 1.3rem;
+    color: #333;
+    margin-right: 2rem;
+}
+.testimonial-logo {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #eee;
+}
+.testimonial-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
 
-# Session state verwalten
-if "testimonial_index" not in st.session_state:
-    st.session_state.testimonial_index = 0
-if "last_switch_time" not in st.session_state:
-    st.session_state.last_switch_time = time.time()
-
-# Automatischer Wechsel alle 6 Sekunden
-if time.time() - st.session_state.last_switch_time > 6:
-    st.session_state.testimonial_index = (st.session_state.testimonial_index + 1) % len(testimonials)
-    st.session_state.last_switch_time = time.time()
-
-# Spaltenaufteilung mit Pfeilen
-col1, col2, col3 = st.columns([1, 6, 1])
-with col1:
-    if st.button("←", key="prev"):
-        st.session_state.testimonial_index = (st.session_state.testimonial_index - 1) % len(testimonials)
-        st.session_state.last_switch_time = time.time()
-with col3:
-    if st.button("→", key="next"):
-        st.session_state.testimonial_index = (st.session_state.testimonial_index + 1) % len(testimonials)
-        st.session_state.last_switch_time = time.time()
-
-# Anzeige
-with col2:
-    st.markdown(f"""
-    <div style="display: flex; align-items: center; justify-content: space-between;
-                background-color: #f9f9f9; padding: 2rem; border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 200px;">
-        <div style="flex: 1; font-size: 1.2rem; color: #333; margin-right: 2rem;">
-            {testimonials[st.session_state.testimonial_index]['text']}
-        </div>
-        <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%;
-                    overflow: hidden; border: 2px solid #eee;">
-            <img src="{testimonials[st.session_state.testimonial_index]['logo']}"
-                 style="width: 100%; height: auto; object-fit: contain;">
-        </div>
+<div class="testimonial-container">
+  <div class="testimonial-box" id="testimonial">
+    <div class="testimonial-text" id="quote">
+      „Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“
+      <br><br><strong>— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende</strong>
     </div>
-    """, unsafe_allow_html=True)
+    <div class="testimonial-logo">
+      <img id="logo" src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png">
+    </div>
+  </div>
+</div>
+
+<script>
+const quotes = [
+  {
+    text: "„Wir dachten, wir führen nur ein Tool ein – aber unsere gesamte Führungskultur hat sich verändert. Der Prozess war nicht immer bequem, aber absolut transformativ.“<br><br><strong>— Leitung HR, Speditions-Unternehmen, 300 Mitarbeitende</strong>",
+    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Logixon.png"
+  },
+  {
+    text: "„Mit KI-Framing verstehen wir jetzt besser, wie wir Akzeptanz für intelligente Systeme kommunizieren müssen. Vieles nutzen wir auch in der Kommunikation außerhalb der KI!“<br><br><strong>— Leitung Kommunikation, Energieversorger, 1100 Mitarbeitende</strong>",
+    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Energiewerte.png"
+  },
+  {
+    text: "„Wir haben echte Veränderungsbereitschaft entfacht und gleichzeitig bewusst Ängste thematisiert. In kurzer Zeit konnten wir so einen konstruktiven Perspektivenwechsel ermöglichen.“<br><br><strong>— Projektleiter, Tech-Unternehmen, 120 Mitarbeitende</strong>",
+    logo: "https://raw.githubusercontent.com/Reik98/Landingpage/main/Technova.png"
+  }
+];
+
+let i = 0;
+setInterval(() => {
+  const quote = document.getElementById("quote");
+  const logo = document.getElementById("logo");
+  quote.innerHTML = quotes[i].text;
+  logo.src = quotes[i].logo;
+  i = (i + 1) % quotes.length;
+}, 5000);
+</script>
+""", unsafe_allow_html=True)
+
 
 
 # --- Footer ---
