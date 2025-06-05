@@ -214,7 +214,7 @@ st.markdown('<div class="divider"><span>Unsere Leistungsangebote</span></div>', 
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
-    <a href="/Leistungen/Paradigmenanalyse" class="feature-link">
+    <a href="/Paradigmenanalyse" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
