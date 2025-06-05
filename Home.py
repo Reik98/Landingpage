@@ -60,17 +60,17 @@ st.markdown("""
             }
 
         .feature-box {
-    background-color: #ffffff;
-    height: 400px;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    box-shadow: none; /* Kein Schatten standardmäßig */
+            background-color: #ffffff;
+            height: 400px;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            box-shadow: none; /* Kein Schatten standardmäßig */
             }
 
         .feature-box:hover, .feature-box:focus, .feature-box:active, .feature-box:visited {
