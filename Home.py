@@ -214,6 +214,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
+    <a href="/Kulturdiagnostik & Integrationsstrategie" style="text-decoration: none;">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/culture.png" class="Logo-Bereiche">
@@ -226,6 +227,7 @@ st.markdown("""
         <li>Integrationsstrategie inkl. kulturellem Re-Design</li>
       </ul>
     </div>
+    </a>
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/coaching.png" class="Logo-Bereiche">
