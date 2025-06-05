@@ -59,8 +59,6 @@ st.markdown("""
             text-decoration: none;
             }
 
-
-
         .feature-box {
             background-color: #ffffff;
             height: 400px;
@@ -75,7 +73,7 @@ st.markdown("""
             display: block;
             }
 
-        .feature-box:hover, .feature-box:focus, .feature-box:active {
+        .feature-box:hover, .feature-box:focus, .feature-box:active, .feature-box:visited {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
             background-color: #f5f5f5;
@@ -83,27 +81,6 @@ st.markdown("""
             text-decoration: none;
             }
         
-        .feature-box a {
-            background-color: #ffffff;
-            height: 400px;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            }
-
-        .feature-box a:hover, .feature-box a:focus, .feature-box a:active {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-            background-color: #f5f5f5;
-            color: inherit;
-            text-decoration: none;
-            }
         .feature-box h4 { margin-top: 0; color: #003865; }
 
         .divider {
