@@ -200,7 +200,7 @@ st.markdown('<div class="divider"><span>Unsere Leistungsangebote</span></div>', 
 st.markdown("""
 <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
   <div style="flex: 1;">
-    <a href="/Paradigmenanalyse" style="text-decoration: none;">
+    <a href="/Leistungen/Paradigmenanalyse" style="text-decoration: none;">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Analyse.png" class="Logo-Bereiche">
@@ -214,7 +214,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
-    <a href="/Kulturdiagnostik & Integrationsstrategie" style="text-decoration: none;">
+    <a href="/Leistungen/Kulturdiagnostik & Integrationsstrategie" style="text-decoration: none;">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/culture.png" class="Logo-Bereiche">
