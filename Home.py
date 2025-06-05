@@ -61,7 +61,7 @@ st.markdown("""
 
 
 
-        .feature-box {
+        .feature-box a {
             background-color: #ffffff;
             height: 400px;
             padding: 1.5rem;
@@ -75,7 +75,7 @@ st.markdown("""
             display: block;
             }
 
-        .feature-box:hover, .feature-box:focus, .feature-box:active {
+        .feature-box a:hover, .feature-box a:focus, .feature-box a:active {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
             background-color: #f5f5f5;
