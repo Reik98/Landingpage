@@ -75,7 +75,7 @@ st.markdown("""
             display: block;
             }
 
-        .feature-box:hover {
+        .feature-box:hover, .feature-box:visited, .feature-box:active {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
             background-color: #f5f5f5;
