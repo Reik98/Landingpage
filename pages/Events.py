@@ -114,3 +114,6 @@ for event in events:
         <p>{event['desc']}</p>
     </div>
     """, unsafe_allow_html=True)
+    
+# --- Footer ---
+st.markdown('<footer style="margin-top: 5rem; text-align: center; font-size: 0.9rem; color: #888;">&copy; 2025 Aicura Consulting – DSGVO-konform · Impressum · Datenschutz</footer>', unsafe_allow_html=True)
