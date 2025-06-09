@@ -109,7 +109,7 @@ def show_header():
     """, unsafe_allow_html=True)
 
     with st.container():
-        st.markdown('<div class="nav-row">', unsafe_allow_html=True)
+        st.markdown('<div class="nav-container">', unsafe_allow_html=True)
 
         # Hier: Interne Navigation mit page_link (keine Neuladung / kein neuer Tab)
         st.page_link("Home.py", label="Home")
