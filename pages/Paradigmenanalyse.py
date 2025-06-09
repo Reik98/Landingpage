@@ -20,7 +20,7 @@ st.markdown("""
         margin-bottom: 2rem; /* 👈 Abstand zum nächsten Abschnitt */
         margin-top: 1rem; /* 👈 Abstand zum nächsten Abschnitt */
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Bild_Quiz.png');
+        url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Paradigmawechsel.jpg');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -106,51 +106,8 @@ st.markdown("""
 </style>
 
 <div class="quiz-intro">
-    <h2>Ist Ihre Organisation KI-fähig?</h2>
-    <p>Beantworten Sie 5 kurze Fragen und erhalten Sie direkt eine Einschätzung zur kulturellen und organisatorischen KI-Reife.</p>
+    <h2>Paradigmenanalyse</h2>
+    <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
 </div>
 """, unsafe_allow_html=True)
 
-# --- Fragen & Antworten ---
-questions = {
-    "Gibt es eine KI-Strategie im Unternehmen?": ["Ja, klar definiert", "Teilweise", "Nein"],
-    "Wie hoch ist das Vertrauen der Mitarbeitenden in KI-Systeme?": ["Hoch", "Mittel", "Gering"],
-    "Welche Rolle spielt KI in Entscheidungsprozessen?": ["Zentrale Rolle", "Unterstützend", "Keine Rolle"],
-    "Gibt es Weiterbildungsangebote zu KI?": ["Regelmäßig", "Geplant", "Keine"],
-    "Wie gut sind Ihre Datenprozesse auf KI vorbereitet?": ["Sehr gut", "Teilweise", "Schwach"]
-}
-
-responses = []
-for i, (question, options) in enumerate(questions.items(), 1):
-    st.markdown(f'<div class="feature-box"><h4>{i}. {question}</h4>', unsafe_allow_html=True)
-    choice = st.radio("", options, key=f"q{i}")
-    responses.append(choice)
-    st.markdown('</div>', unsafe_allow_html=True)
-
-# --- Ergebnis ---
-if st.button("Ergebnis auswerten"):
-    if all(responses):
-        score = sum([questions[q].index(a) for q, a in zip(questions.keys(), responses)])
-
-        st.subheader("📈 Ihr Ergebnis:")
-
-        if score <= 3:
-            st.success("✅ Sehr gute Voraussetzungen für KI-Einführung!")
-            recommendation = "Sie sind bereit für komplexe KI-Projekte – denken Sie über agentenbasierte Automation nach."
-        elif score <= 6:
-            st.info("🟡 Gute Basis, aber es besteht Handlungsbedarf.")
-            recommendation = "Fokussieren Sie sich auf Change-Kommunikation und interne Weiterbildung."
-        else:
-            st.warning("🔴 Ihre Organisation ist noch nicht KI-fähig.")
-            recommendation = "Beginnen Sie mit einer Kulturdiagnose und ersten Pilotprojekten."
-
-        st.markdown(f"**Empfehlung:** {recommendation}")
-
-        with st.form("email_form"):
-            st.markdown("📩 **Sie möchten die Auswertung & Empfehlung per E-Mail?**")
-            email = st.text_input("Ihre E-Mail-Adresse")
-            send_email = st.form_submit_button("Absenden")
-            if send_email:
-                st.success(f"Vielen Dank! Ihre Empfehlung wurde an {email} gesendet.")
-    else:
-        st.error("❗️Bitte beantworten Sie alle Fragen, bevor Sie das Ergebnis auswerten.")
