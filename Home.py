@@ -259,7 +259,7 @@ st.markdown("""
     </a>
   </div>
   <div style="flex: 1;">
-    <a href="/KI-Framing Workshops" class="feature-link">
+    <a href="/KI_Framing_Workshops" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/meeting.png" class="Logo-Bereiche">
