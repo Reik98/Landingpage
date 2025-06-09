@@ -24,7 +24,7 @@ st.markdown("""
     url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Prototyp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
