@@ -10,7 +10,7 @@ st.set_page_config(
 
 show_header()
 
-# --- Hero-Bild: https://www.immo-invest.ch/paradigmenwechsel-in-der-proptech-welt/---
+# --- Hero-Bild: https://www.engagement-in-der-kultur.de/wp-content/uploads/EidK_Homepage_Kultur_Angebote_Bild.jpg---
 st.markdown("""
 <style>
 .hero-about {
