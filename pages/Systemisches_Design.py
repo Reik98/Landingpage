@@ -12,7 +12,7 @@ st.set_page_config(
 
 show_header()
 
-# --- Hero-Bild: https://www.fuer-gruender.de/fileadmin/blog/fal/106134.jpg---
+# --- Hero-Bild: https://www.iis.fraunhofer.de/de/ff/lv/net/jcr:content/stage/stageParsys/stage_slide/image.img.png/1643987344631/20211018-Vernetzung-AdobeStock-285478116-v4-WEB.png---
 st.markdown("""
 <style>
 .hero-about {
