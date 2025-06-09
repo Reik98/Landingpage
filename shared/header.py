@@ -23,7 +23,7 @@ def show_header():
     }
 
     .nav-row .stLinkButton > button:hover {
-        background-color: #00c6d2;
+        background-color: #008B92;
     color: #000;
     text-decoration: none;
     }
