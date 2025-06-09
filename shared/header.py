@@ -50,7 +50,29 @@ def show_header():
     color: #000;
     text-decoration: none;
 }
+ .nav-row {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
 
+    .nav-row .stLinkButton > button {
+        background-color: #008B92;
+        color: #ffffff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-row .stLinkButton > button:hover {
+        background-color: #00c6d2;
+        color: #000000;
+    }
     body {
         padding-top: calc(3.0rem + 110px);
     }
@@ -109,7 +131,7 @@ def show_header():
     """, unsafe_allow_html=True)
 
     with st.container():
-        st.markdown('<div class="nav-container">', unsafe_allow_html=True)
+        st.markdown('<div class="nav-row">', unsafe_allow_html=True)
 
         # Hier: Interne Navigation mit page_link (keine Neuladung / kein neuer Tab)
         st.page_link("Home.py", label="Home")
