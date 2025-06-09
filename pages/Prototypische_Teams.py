@@ -13,7 +13,7 @@ st.set_page_config(
 
 show_header()
 
-# --- Hero-Bild: https://www.fuer-gruender.de/fileadmin/blog/fal/106134.jpg---
+# --- Hero-Bild: https://www.studio-gong.de/blog/wp-content/uploads/2025/03/Beitragsbild_Vermeide-diese-7-Fehler-KI.jpg---
 st.markdown("""
 <style>
 .hero-about {
@@ -21,7 +21,7 @@ st.markdown("""
     width: 100%;
     height: 700px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Workshop.jpg');
+    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Prototyp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
