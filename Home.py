@@ -243,7 +243,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
-    <a href="/Change-Coaching & Impulsformate" class="feature-link">
+    <a href="/Change_Coaching_Impulsformate" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/coaching.png" class="Logo-Bereiche">
