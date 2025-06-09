@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
 def show_header():
     st.markdown("""
@@ -34,42 +33,92 @@ def show_header():
         gap: 2rem;
         margin-left: auto;
         font-weight: bold;
-        flex-direction: row;
     }
 
-    .nav-button {
-        background-color: #008B92;
-        color: #ffffff;
-        padding: 0.6rem 1.2rem;
-        border-radius: 6px;
-        font-size: 1.1rem;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        text-decoration: none;
-    }
+    .nav-container a {
+    background-color: #008B92;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
 
-    .nav-button:hover {
-        background-color: #00c6d2;
-        color: #000;
-    }
+.nav-container a:hover {
+    background-color: #00c6d2;
+    color: #000;
+    text-decoration: none;
+}
 
     body {
         padding-top: calc(3.0rem + 110px);
     }
 
-    </style>
+    @media (max-width: 768px) {
+        header {  
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: auto;
+            padding: 1rem;
+            align-items: flex-start;
+        }
 
-    <header>
-        <a href="/">
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
-        </a>
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
-        <div class="nav-container">
-            <a class="nav-button" href="/">Home</a>
-            <a class="nav-button" href="/Quiz">Quiz</a>
-            <a class="nav-button" href="/Events">Events</a>
-            <a class="nav-button" href="/Über_uns">Über uns</a>
-        </div>
-    </header>
+        .logo-main { height: 50px; margin-bottom: 0.5rem; }
+        .logo-partner { height: 28px; margin-bottom: 0.5rem; }
+
+        .nav-container {
+            flex-direction: row; /* ✅ sorgt für nebeneinander */
+            gap: 1rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-container a {
+            font-size: 1rem;
+        }
+
+        body {
+            padding-top: calc(3.0rem + 140px);
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        header {
+            background-color: #ffffff !important;
+        }
+
+        .nav-container a {
+            color: #ffffff !important;
+        }
+
+        .nav-container a:hover {
+            color: #ffffff !important;
+            text-decoration: underline;
+        }
+
+        .logo-main {
+            filter: brightness(200%) contrast(120%);
+        }
+
+        body {
+            background-color: #1e1e1e;
+        }
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <header>
+            <a href="/">
+                <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
+            </a>
+            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
+            <div class="nav-container">
+                <a href="/">Home</a>
+                <a href="/Quiz">Quiz</a>
+                <a href="/Events">Events</a>
+                <a href="/Über_uns">Über uns</a>
+            </div>
+        </header>
     """, unsafe_allow_html=True)
