@@ -17,14 +17,16 @@ def show_header():
             }
             .logo-main { height: 70px; }
             .logo-partner { height: 40px; margin-left: 1rem; }
-            .nav-links a {
-                margin-left: 2rem;
-                font-size: 1rem;
-                text-decoration: none;
+            .nav-button {
+                background: none;
+                border: none;
                 color: #003865;
                 font-weight: 600;
+                font-size: 1rem;
+                margin-left: 2rem;
+                cursor: pointer;
             }
-            .nav-links a:hover {
+            .nav-button:hover {
                 color: #fdbc00;
             }
         </style>
@@ -33,9 +35,21 @@ def show_header():
                 <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main">
                 <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner">
             </div>
-            <div class="nav-links">
-                <a href="/">🏠 Home</a>
-                <a href="/1_Quiz">📋 Quiz</a>
+            <div>
+                <form action="" method="get">
+                    <button name="page" value="home" class="nav-button">🏠 Home</button>
+                    <button name="page" value="quiz" class="nav-button">📋 Quiz</button>
+                </form>
             </div>
         </div>
     """, unsafe_allow_html=True)
+
+# Logik zur Navigation
+page = st.query_params.get("page", "home")
+
+if page == "home":
+    st.title("Startseite")
+    st.write("Willkommen!")
+elif page == "quiz":
+    st.title("Quiz")
+    st.write("Hier ist dein Quiz!")
