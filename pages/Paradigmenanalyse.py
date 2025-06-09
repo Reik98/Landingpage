@@ -31,7 +31,20 @@ st.markdown("""
         text-align: center;
         text-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
-
+    .catchfrase {
+        background-color: #ffffff;
+        width: 100%;
+        margin-top: 20px;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+    .catchfrase h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
     .feature-box {
         background-color: #ffffff;
         padding: 1.5rem;
