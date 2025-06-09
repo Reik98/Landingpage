@@ -8,6 +8,7 @@ def show_header():
         gap: 2rem;
         margin-left: auto;
         font-weight: bold;
+        flex-direction: row; /* ✅ sorgt für nebeneinander */
     }
 
     .nav-row .stLinkButton > button {
