@@ -5,10 +5,9 @@ def show_header():
     <style>
     .nav-row {
         display: flex;
-        justify-content: flex-end;
-        gap: 1rem;
-        margin-top: -70px;
-        margin-bottom: 50px;
+        gap: 2rem;
+        margin-left: auto;
+        font-weight: bold;
     }
 
     .nav-row .stLinkButton > button {
@@ -24,7 +23,11 @@ def show_header():
 
     .nav-row .stLinkButton > button:hover {
         background-color: #00c6d2;
-        color: #000000;
+    color: #000;
+    text-decoration: none;
+    }
+    body {
+        padding-top: calc(3.0rem + 110px);
     }
     </style>
     """, unsafe_allow_html=True)
