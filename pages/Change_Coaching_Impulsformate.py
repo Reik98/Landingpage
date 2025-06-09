@@ -40,6 +40,7 @@ st.markdown("""
 }
 </style>
 <div class="hero-about">
+    <h1>Change-Coaching & Impulsformate</h1>
     <p>Begleitung Ihrer Führungskräfte beim Wandel zur KI-kompatiblen Unternehmenskultur.</p>
 </div>
 """, unsafe_allow_html=True)
