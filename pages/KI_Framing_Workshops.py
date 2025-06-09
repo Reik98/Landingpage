@@ -4,14 +4,14 @@ import streamlit as st
 from shared.header import show_header  # Gemeinsamer Header
 
 st.set_page_config(
-    page_title="Aicura – Kulturdiagnostik_Integrationsstrategie",
+    page_title="Aicura – KI_Framing_Workshops",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
 show_header()
 
-# --- Hero-Bild: https://www.engagement-in-der-kultur.de/wp-content/uploads/EidK_Homepage_Kultur_Angebote_Bild.jpg---
+# --- Hero-Bild: https://www.fuer-gruender.de/fileadmin/blog/fal/106134.jpg---
 st.markdown("""
 <style>
 .hero-about {
@@ -19,7 +19,7 @@ st.markdown("""
     width: 100%;
     height: 700px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Kultur.jpg');
+    url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Workshop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,8 +41,8 @@ st.markdown("""
 }
 </style>
 <div class="hero-about">
-    <h1>Kulturdiagnostik & Integrationsstrategie</h1>
-    <p>Tool-gestützte Analyse Ihrer aktuellen kulturellen Reife zur Integration von KI.</p>
+    <h1>KI-Framing Workshops</h1>
+    <p>Wie muss KI kommunizieren, um akzeptiert zu werden? Narrative & Tonalitätsdesign.</p>
 </div>
 """, unsafe_allow_html=True)
 
