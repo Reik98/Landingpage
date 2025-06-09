@@ -2,7 +2,7 @@ import streamlit as st
 from shared.header import show_header  # Header importieren
 
 st.set_page_config(
-    page_title="KI-Fähigkeit Ihrer Organisation prüfen – Aicura Quiz",
+    page_title="Paradigmenanalyse",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
