@@ -36,7 +36,7 @@ st.markdown("""
 }
 .hero-about p {
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin-top: 20.5rem;
 }
 </style>
 <div class="hero-about">
