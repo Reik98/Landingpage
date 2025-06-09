@@ -18,6 +18,7 @@ st.markdown("""
     height: 700px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Paradigmawechsel.jpg');
+    #https://www.immo-invest.ch/paradigmenwechsel-in-der-proptech-welt/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
