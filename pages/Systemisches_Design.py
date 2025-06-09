@@ -23,7 +23,7 @@ st.markdown("""
     url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Systemdesign.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: column;
     justify-content: center;
