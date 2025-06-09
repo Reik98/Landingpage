@@ -108,40 +108,13 @@ def show_header():
     </style>
     """, unsafe_allow_html=True)
 
-     st.markdown("""
-    <header>
-        <a href="/">
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
-        </a>
-        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
-        <div class="nav-container">
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="home">Home</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="quiz">Quiz</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="events">Events</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="about">Über uns</button>
-            </form>
-        </div>
-    </header>
-    """, unsafe_allow_html=True)
+    with st.container():
+        st.markdown('<div class="nav-row">', unsafe_allow_html=True)
 
-# Header anzeigen
-show_header()
+        # Hier: Interne Navigation mit page_link (keine Neuladung / kein neuer Tab)
+        st.page_link("Home.py", label="Home")
+        st.page_link("pages/Quiz.py", label="Quiz")
+        st.page_link("pages/Events.py", label="Events")
+        st.page_link("pages/Über_uns.py", label="Über uns")
 
-# Seiteninhalt anzeigen (einfaches Beispiel)
-if page == "home":
-    st.title("🏠 Home")
-elif page == "quiz":
-    st.title("❓ Quiz")
-elif page == "events":
-    st.title("📅 Events")
-elif page == "about":
-    st.title("👥 Über uns")
-else:
-    st.title("Willkommen!")
+        st.markdown('</div>', unsafe_allow_html=True)
