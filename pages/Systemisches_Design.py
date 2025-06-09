@@ -21,7 +21,7 @@ st.markdown("""
     height: 700px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url('https://raw.githubusercontent.com/Reik98/Landingpage/main/Systemdesign.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     display: flex;
