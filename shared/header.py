@@ -108,17 +108,40 @@ def show_header():
     </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("""
-        <header>
-            <a href="/">
-                <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
-            </a>
-            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
-            <div class="nav-container">
-                <a href="/">Home</a>
-                <a href="/Quiz">Quiz</a>
-                <a href="/Events">Events</a>
-                <a href="/Über_uns">Über uns</a>
-            </div>
-        </header>
+     st.markdown("""
+    <header>
+        <a href="/">
+            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
+        </a>
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
+        <div class="nav-container">
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="home">Home</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="quiz">Quiz</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="events">Events</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="about">Über uns</button>
+            </form>
+        </div>
+    </header>
     """, unsafe_allow_html=True)
+
+# Header anzeigen
+show_header()
+
+# Seiteninhalt anzeigen (einfaches Beispiel)
+if page == "home":
+    st.title("🏠 Home")
+elif page == "quiz":
+    st.title("❓ Quiz")
+elif page == "events":
+    st.title("📅 Events")
+elif page == "about":
+    st.title("👥 Über uns")
+else:
+    st.title("Willkommen!")
