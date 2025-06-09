@@ -35,10 +35,11 @@ st.markdown("""
 }
 .hero-about p {
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 </style>
 <div class="hero-about">
-    <h1>Paradigmenanalyse</h1>
+    <h1> </h1>
     <p>Bewertung klassischer OE-Modelle wie Luhmann, Kotter oder Senge in Bezug auf KI-Fähigkeit.</p>
 </div>
 """, unsafe_allow_html=True)
