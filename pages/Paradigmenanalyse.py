@@ -53,34 +53,23 @@ st.markdown("""
 
 # --- Geschichte ---
 st.markdown("""
-### 🎓 Erstens
+### Erstens
 
 ...
 """)
 
 # --- Vision & Werte ---
 st.markdown("""
-### 🔮 Zweitens
+### Zweitens
 
-> **Transforming Culture. Responsibly.**
-
-Wir glauben, dass technologischer Fortschritt nur dann nachhaltig ist, wenn er kulturell verankert wird. Deshalb begleiten wir Organisationen im Wandel – achtsam, systemisch und mit Begeisterung für neue Denkweisen.
-
-### 💭 Unsere Werte
-
-- **Verantwortung**: KI braucht Haltung. Wir stehen für eine ethisch fundierte Anwendung.
-- **Partizipation**: Kulturveränderung gelingt nur gemeinsam.
-- **Systemisches Denken**: Wir sehen Organisationen als lebendige Systeme, nicht als Maschinen.
-- **Mut zum Wandel**: Wir provozieren neue Perspektiven und hinterfragen Bestehendes.
+...
 """)
 
 # --- Teamvorstellung ---
 st.markdown("""
-### 🤝 Unser Team
+### Drittens
 
-Wir sind interdisziplinär: Systemiker:innen, KI-Spezialist:innen, Organisationsentwickler:innen, Kommunikationsstrateg:innen und Designer:innen. Gemeinsam vereinen wir wissenschaftliche Fundierung mit kreativer Praxis.
-
-Unser Netzwerk wächst stetig und lebt von der Überzeugung, dass Kulturentwicklung im Zeitalter von KI mehr als ein Projekt ist – es ist eine Haltung.
+...
 """)
 
 # --- Footer ---
