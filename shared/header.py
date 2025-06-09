@@ -1,10 +1,5 @@
 import streamlit as st
-
-# Seiten-Logik (optional bei multipage, falls du query param nutzen willst)
-page = st.experimental_get_query_params().get("page", ["home"])[0]
-
-def navigate(target_page):
-    st.experimental_set_query_params(page=target_page)
+import streamlit.components.v1 as components
 
 def show_header():
     st.markdown("""
@@ -42,10 +37,6 @@ def show_header():
         flex-direction: row;
     }
 
-    .nav-container form {
-        margin: 0;
-    }
-
     .nav-button {
         background-color: #008B92;
         color: #ffffff;
@@ -55,6 +46,7 @@ def show_header():
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        text-decoration: none;
     }
 
     .nav-button:hover {
@@ -66,67 +58,18 @@ def show_header():
         padding-top: calc(3.0rem + 110px);
     }
 
-    @media (max-width: 768px) {
-        header {
-            flex-wrap: wrap;
-            justify-content: space-between;
-            height: auto;
-            padding: 1rem;
-            align-items: flex-start;
-        }
-
-        .logo-main { height: 50px; margin-bottom: 0.5rem; }
-        .logo-partner { height: 28px; margin-bottom: 0.5rem; }
-
-        .nav-container {
-            flex-direction: row;
-            gap: 1rem;
-            margin-top: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        body {
-            padding-top: calc(3.0rem + 140px);
-        }
-    }
     </style>
-    """, unsafe_allow_html=True)
 
-    # HTML header
-    st.markdown("""
     <header>
         <a href="/">
             <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
         </a>
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
         <div class="nav-container">
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="home">Home</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="quiz">Quiz</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="events">Events</button>
-            </form>
-            <form action="" method="get">
-                <button class="nav-button" name="page" value="about">Über uns</button>
-            </form>
+            <a class="nav-button" href="/">Home</a>
+            <a class="nav-button" href="/Quiz">Quiz</a>
+            <a class="nav-button" href="/Events">Events</a>
+            <a class="nav-button" href="/Über_uns">Über uns</a>
         </div>
     </header>
     """, unsafe_allow_html=True)
-
-# Header anzeigen
-show_header()
-
-# Seiteninhalt anzeigen (einfaches Beispiel)
-if page == "home":
-    st.title("🏠 Home")
-elif page == "quiz":
-    st.title("❓ Quiz")
-elif page == "events":
-    st.title("📅 Events")
-elif page == "about":
-    st.title("👥 Über uns")
-else:
-    st.title("Willkommen!")
