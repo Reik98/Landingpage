@@ -23,7 +23,7 @@ st.markdown("""
     margin-top: 1rem; /* 👈 Abstand zum nächsten Abschnitt */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
