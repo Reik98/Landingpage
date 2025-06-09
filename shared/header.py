@@ -1,68 +1,132 @@
 import streamlit as st
 
-# Setze aktuelle Seite, wenn noch nicht vorhanden
-if "page" not in st.session_state:
-    st.session_state.page = "Home"
+# Seiten-Logik (optional bei multipage, falls du query param nutzen willst)
+page = st.experimental_get_query_params().get("page", ["home"])[0]
 
-# Navigationsfunktion
-def set_page(page_name):
-    st.session_state.page = page_name
+def navigate(target_page):
+    st.experimental_set_query_params(page=target_page)
 
-# Header mit Navigation
 def show_header():
     st.markdown("""
     <style>
+    header {
+        position: fixed;
+        top: 3.0rem;
+        left: 0;
+        width: 100%;
+        height: 110px;
+        background-color: white;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo-main {
+        height: 70px;
+        margin-right: 1rem;
+        transition: filter 0.3s ease;
+    }
+
+    .logo-partner {
+        height: 35px;
+        margin-right: 2rem;
+    }
+
     .nav-container {
         display: flex;
-        gap: 1rem;
-        margin-bottom: 2rem;
+        gap: 2rem;
+        margin-left: auto;
+        font-weight: bold;
+        flex-direction: row;
     }
+
+    .nav-container form {
+        margin: 0;
+    }
+
     .nav-button {
         background-color: #008B92;
-        color: white;
+        color: #ffffff;
         padding: 0.6rem 1.2rem;
         border-radius: 6px;
-        text-decoration: none;
         font-size: 1.1rem;
         border: none;
         cursor: pointer;
+        transition: background-color 0.3s ease;
     }
+
     .nav-button:hover {
         background-color: #00c6d2;
-        color: black;
+        color: #000;
+    }
+
+    body {
+        padding-top: calc(3.0rem + 110px);
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: auto;
+            padding: 1rem;
+            align-items: flex-start;
+        }
+
+        .logo-main { height: 50px; margin-bottom: 0.5rem; }
+        .logo-partner { height: 28px; margin-bottom: 0.5rem; }
+
+        .nav-container {
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        body {
+            padding-top: calc(3.0rem + 140px);
+        }
     }
     </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("## Aicura App")
+    # HTML header
+    st.markdown("""
+    <header>
+        <a href="/">
+            <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_1.png" class="logo-main" alt="Aicura Logo">
+        </a>
+        <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/Logo_2.png" class="logo-partner" alt="Partner Logo">
+        <div class="nav-container">
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="home">Home</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="quiz">Quiz</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="events">Events</button>
+            </form>
+            <form action="" method="get">
+                <button class="nav-button" name="page" value="about">Über uns</button>
+            </form>
+        </div>
+    </header>
+    """, unsafe_allow_html=True)
 
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        if st.button("Home"):
-            set_page("Home")
-    with col2:
-        if st.button("Quiz"):
-            set_page("Quiz")
-    with col3:
-        if st.button("Events"):
-            set_page("Events")
-    with col4:
-        if st.button("Über uns"):
-            set_page("Über uns")
-
-# Inhalt je nach Seite anzeigen
-def show_content():
-    page = st.session_state.page
-
-    if page == "Home":
-        st.write("🏠 **Willkommen auf der Startseite!**")
-    elif page == "Quiz":
-        st.write("❓ **Hier beginnt dein Quiz!**")
-    elif page == "Events":
-        st.write("📅 **Event-Übersicht:** Hier findest du alle Events.")
-    elif page == "Über uns":
-        st.write("👥 **Wer wir sind:** Informationen über das Team.")
-
-# App starten
+# Header anzeigen
 show_header()
-show_content()
+
+# Seiteninhalt anzeigen (einfaches Beispiel)
+if page == "home":
+    st.title("🏠 Home")
+elif page == "quiz":
+    st.title("❓ Quiz")
+elif page == "events":
+    st.title("📅 Events")
+elif page == "about":
+    st.title("👥 Über uns")
+else:
+    st.title("Willkommen!")
