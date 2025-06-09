@@ -154,3 +154,6 @@ if st.button("Ergebnis auswerten"):
                 st.success(f"Vielen Dank! Ihre Empfehlung wurde an {email} gesendet.")
     else:
         st.error("❗️Bitte beantworten Sie alle Fragen, bevor Sie das Ergebnis auswerten.")
+        
+# --- Footer ---
+st.markdown('<footer style="margin-top: 5rem; text-align: center; font-size: 0.9rem; color: #888;">&copy; 2025 Aicura Consulting – DSGVO-konform · Impressum · Datenschutz</footer>', unsafe_allow_html=True)
