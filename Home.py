@@ -273,7 +273,7 @@ st.markdown("""
       </ul>
     </div>
     </a>
-    <a href="/Systemisches Design" class="feature-link">
+    <a href="/Systemisches_Design" class="feature-link">
     <div class="feature-box">
       <div class="centered-image">
         <img src="https://raw.githubusercontent.com/Reik98/Landingpage/main/systemic.png" class="Logo-Bereiche">
