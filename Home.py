@@ -198,7 +198,7 @@ st.markdown("""
 <div class="hero">
     <h1>Verändern Sie Ihre Organisation mit Künstlicher Intelligenz</h1>
     <p>Kulturwandel beginnt dort, wo Technologie auf Haltung trifft.</p>
-    <a href="#form" class="cta-button">Kostenfreies Erstgespräch buchen</a>
+    <a href="#buchen-sie-ihr-erstgespraech" class="cta-button">Kostenfreies Erstgespräch buchen</a>
 </div>
 """, unsafe_allow_html=True)
 
