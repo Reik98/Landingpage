@@ -51,12 +51,18 @@ st.markdown("""
             border-radius: 8px;
             font-weight: bold;
             display: inline-block;
+            text-decoration: none; /* kein Unterstrich standardmäßig */
             }
             
-        .cta-button:link, .cta-button:visited, .cta-button:hover, .cta-button:active {
+        .cta-button:link, .cta-button:visited, .cta-button:active {
             background-color: #008B92;
             color: #FFFFFF;
-            text-decoration: none; /* kein Unterstrich standardmäßig */
+            text-decoration: none;
+            }
+        .cta-button:hover {
+            color: #FFFFFF;
+            background-color: #008B92;
+            text-decoration: underline;
             }
 
         .feature-box {
