@@ -53,7 +53,7 @@ st.markdown("""
             display: inline-block;
             }
             
-        .cta-button, .cta-button:link, .cta-button:visited, .cta-button:hover, .cta-button:active {
+        .cta-button:link, .cta-button:visited, .cta-button:hover, .cta-button:active {
             background-color: #008B92;
             color: #FFFFFF;
             text-decoration: none; /* kein Unterstrich standardmäßig */
