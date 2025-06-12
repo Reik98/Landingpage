@@ -51,7 +51,6 @@ st.markdown("""
             border-radius: 8px;
             font-weight: bold;
             display: inline-block;
-            text-decoration: none; /* kein Unterstrich standardmäßig */
             }
             
         .cta-button, .cta-button:link, .cta-button:visited, .cta-button:hover, .cta-button:active {
