@@ -3,7 +3,7 @@ from shared.header import show_header  # falls du eine Header-Datei nutzt
 from datetime import datetime
 
 st.set_page_config(
-    page_title="Events & Vorträge – Aicura Consulting",
+    page_title="Aicura - Events & Vorträge",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
