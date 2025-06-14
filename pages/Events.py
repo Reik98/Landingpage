@@ -76,7 +76,7 @@ st.markdown("""
 # --- Catchphrase ---
 st.markdown("""
 <div class="catchfrase">
-    <h3>Ob Impulsvortrag, Webinar oder interaktiver Talk –</h3>
+    <h3>Ob Impulsvortrag, Webinar oder interaktiver Talk</h3>
     <p>Unsere Veranstaltungen bringen die Themen KI, Kulturwandel und systemische Veränderung dorthin, wo sie wirken: in Ihre Köpfe, Teams und Organisationen.</p>
 </div>
 """, unsafe_allow_html=True)
