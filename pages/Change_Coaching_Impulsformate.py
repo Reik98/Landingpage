@@ -55,7 +55,7 @@ st.markdown("""
 
 # --- Geschichte ---
 st.markdown("""
-### Erstensrgdf
+### Erstens
 
 ...
 """)
